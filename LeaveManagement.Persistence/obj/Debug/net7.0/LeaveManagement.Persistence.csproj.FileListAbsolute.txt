@@ -1,0 +1,17 @@
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\bin\Debug\net7.0\LeaveManagement.Persistence.deps.json
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\bin\Debug\net7.0\LeaveManagement.Persistence.runtimeconfig.json
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\bin\Debug\net7.0\LeaveManagement.Persistence.dll
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\bin\Debug\net7.0\LeaveManagement.Persistence.pdb
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\bin\Debug\net7.0\LeaveManagement.Domain.dll
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\bin\Debug\net7.0\LeaveManagement.Domain.pdb
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\obj\Debug\net7.0\LeaveManagement.Persistence.csproj.AssemblyReference.cache
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\obj\Debug\net7.0\LeaveManagement.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\obj\Debug\net7.0\LeaveManagement.Persistence.AssemblyInfoInputs.cache
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\obj\Debug\net7.0\LeaveManagement.Persistence.AssemblyInfo.cs
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\obj\Debug\net7.0\LeaveManagement.Persistence.csproj.CoreCompileInputs.cache
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\obj\Debug\net7.0\LeaveManagement.Persistence.csproj.CopyComplete
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\obj\Debug\net7.0\LeaveManagement.Persistence.dll
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\obj\Debug\net7.0\refint\LeaveManagement.Persistence.dll
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\obj\Debug\net7.0\LeaveManagement.Persistence.pdb
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\obj\Debug\net7.0\LeaveManagement.Persistence.genruntimeconfig.cache
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Persistence\obj\Debug\net7.0\ref\LeaveManagement.Persistence.dll
