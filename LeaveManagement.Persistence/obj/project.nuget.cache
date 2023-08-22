@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "LfXbo6obMF/HQUEFU3n6yZ4LBkzT8px+cHZfstU6Jw+AVQZwn7eifydwYsPp3oqVUYGeDQSVEP3wR4qEqob4bQ==",
+  "dgSpecHash": "LMjfAEVm6Bxgqz8sF8+GeQlIsKKkP2QtJidHTut5miS1ZLXd9XJWPUOnTHsBktvazybYUVR3bNXGr6t41JBaJA==",
   "success": true,
   "projectFilePath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hengsomnang\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Hengsomnang\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Hengsomnang\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Hengsomnang\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Hengsomnang\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.10\\microsoft.data.sqlite.core.7.0.10.nupkg.sha512",
     "C:\\Users\\Hengsomnang\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
     "C:\\Users\\Hengsomnang\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.10\\microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",

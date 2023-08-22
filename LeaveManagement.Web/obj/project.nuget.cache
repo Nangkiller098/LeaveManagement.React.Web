@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "2yf0Tjd1BqOIA8dvvMNnSWjwtkiDW0EuzCvB2JSpaENtOcAAGCcnXynUmgH0JLWueQK/3KQ9gEWBzzBoQGibKw==",
+  "dgSpecHash": "HasNWcmWWoxCJXUGVbg4s697w8tC70mRhck3Oi5oVqQbxp29YptX2Qhs9jhIND488uvL2bV0+18FBtBFz1Zd3Q==",
   "success": true,
-  "projectFilePath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj",
+  "projectFilePath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.web\\LeaveManagement.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hengsomnang\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Hengsomnang\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Hengsomnang\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Hengsomnang\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
+    "C:\\Users\\Hengsomnang\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Hengsomnang\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.10\\microsoft.data.sqlite.core.7.0.10.nupkg.sha512",
     "C:\\Users\\Hengsomnang\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
     "C:\\Users\\Hengsomnang\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.10\\microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",

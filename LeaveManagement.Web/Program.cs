@@ -1,4 +1,5 @@
 using LeaveManagement.Application.Contracts;
+using LeaveManagement.Application.MappingProfile;
 using LeaveManagement.Application.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
@@ -16,6 +17,8 @@ builder.Services.AddSwaggerGen();
 //connectionstring
 builder.Services.AddDbContext<ReactDbContext>(opt =>
     opt.UseSqlite(builder.Configuration.GetConnectionString("SqliteConnection")));
+
+//config CORS
 builder.Services.AddCors(opt=>{
     opt.AddPolicy("AllowAll",
         b=>b.AllowAnyHeader()
@@ -26,6 +29,8 @@ builder.Host.UseSerilog((ctx,lc)=>lc.WriteTo.Console().ReadFrom.Configuration(ct
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<ILeaveTypesRepository, LeaveTypesRepository>();
+//autoMapper
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

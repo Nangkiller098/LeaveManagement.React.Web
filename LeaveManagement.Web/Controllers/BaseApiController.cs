@@ -4,7 +4,7 @@ namespace LeaveManagement.Web.Controllers
 {  
     [ApiController]
     [Route("[controller]")]
-    public class BaseApiController : Controller
+    public class BaseApiController : ControllerBase
     {
         
     }

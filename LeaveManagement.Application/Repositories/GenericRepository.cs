@@ -40,7 +40,8 @@ namespace LeaveManagement.Application.Repositories
 
         public Task<bool> Exits(Guid id)
         {
-            throw new NotImplementedException();
+           var entity = GetAsync(id);
+            return Task.FromResult(entity != null);
         }
 
         public async Task<List<T>> GetAllAsync()

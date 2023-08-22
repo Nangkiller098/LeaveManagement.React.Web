@@ -4,14 +4,14 @@
     "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj": {}
   },
   "projects": {
-    "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj": {
+    "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj",
+        "projectUniqueName": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj",
         "projectName": "LeaveManagement.Domain",
-        "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj",
+        "projectPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\Hengsomnang\\.nuget\\packages\\",
-        "outputPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\obj\\",
+        "outputPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hengsomnang\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -93,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj": {
-                "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj"
+              "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj": {
+                "projectPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj"
               }
             }
           }
@@ -109,6 +109,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
