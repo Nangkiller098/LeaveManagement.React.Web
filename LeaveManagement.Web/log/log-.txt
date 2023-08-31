@@ -3739,3 +3739,236 @@ FROM "LeaveTypes" AS "l"
 2023-08-22 17:08:03.328 +07:00 [INF] HTTP GET /LeaveTypes responded 200 in 6.7625 ms
 2023-08-22 17:08:03.330 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes - - - 200 - application/json;+charset=utf-8 8.8169ms
 2023-08-22 17:08:27.018 +07:00 [INF] Application is shutting down...
+2023-08-22 19:27:41.638 +07:00 [INF] Now listening on: http://localhost:5000
+2023-08-22 19:27:41.650 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-22 19:27:41.651 +07:00 [INF] Hosting environment: Development
+2023-08-22 19:27:41.652 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-08-22 19:27:49.450 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - -
+2023-08-22 19:27:49.486 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-08-22 19:27:49.490 +07:00 [INF] HTTP GET / responded 404 in 6.4848 ms
+2023-08-22 19:27:49.499 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - - - 404 0 - 50.1644ms
+2023-08-22 19:28:19.307 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes - -
+2023-08-22 19:28:19.311 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-08-22 19:28:19.322 +07:00 [INF] Route matched with {action = "GetLeaveTypes", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveTypes() on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:28:19.805 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."Id", "l"."DateCreated", "l"."DateModified", "l"."DefaultDays", "l"."Name"
+FROM "LeaveTypes" AS "l"
+2023-08-22 19:28:19.866 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LeaveManagement.Domain.Dto.LeaveTypesVM, LeaveManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-22 19:28:19.895 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web) in 568.9497ms
+2023-08-22 19:28:19.896 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-08-22 19:28:19.897 +07:00 [INF] HTTP GET /LeaveTypes responded 200 in 588.5174 ms
+2023-08-22 19:28:19.904 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes - - - 200 - application/json;+charset=utf-8 596.4588ms
+2023-08-22 19:37:06.976 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes - -
+2023-08-22 19:37:06.978 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-08-22 19:37:06.980 +07:00 [INF] Route matched with {action = "GetLeaveTypes", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveTypes() on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:37:07.022 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."Id", "l"."DateCreated", "l"."DateModified", "l"."DefaultDays", "l"."Name"
+FROM "LeaveTypes" AS "l"
+2023-08-22 19:37:07.026 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LeaveManagement.Domain.Dto.LeaveTypesVM, LeaveManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-22 19:37:07.028 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web) in 46.3591ms
+2023-08-22 19:37:07.030 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-08-22 19:37:07.031 +07:00 [INF] HTTP GET /LeaveTypes responded 200 in 53.3478 ms
+2023-08-22 19:37:07.033 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes - - - 200 - application/json;+charset=utf-8 57.1853ms
+2023-08-22 19:39:37.360 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc-2c963f66afa6 - -
+2023-08-22 19:39:37.362 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:39:37.407 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:39:37.491 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."Id", "l"."DateCreated", "l"."DateModified", "l"."DefaultDays", "l"."Name"
+FROM "LeaveTypes" AS "l"
+WHERE "l"."Id" = @__get_Item_0
+LIMIT 1
+2023-08-22 19:39:37.495 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Dto.LeaveTypesVM'.
+2023-08-22 19:39:37.496 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 87.6436ms
+2023-08-22 19:39:37.497 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:39:37.498 +07:00 [INF] HTTP GET /LeaveTypes/3fa85f64-5717-4562-b3fc-2c963f66afa6 responded 200 in 136.8874 ms
+2023-08-22 19:39:37.500 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc-2c963f66afa6 - - - 200 - application/json;+charset=utf-8 139.9759ms
+2023-08-22 19:41:10.980 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc-2c963f66afa6 - -
+2023-08-22 19:41:10.984 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:41:10.986 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:41:10.996 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."Id", "l"."DateCreated", "l"."DateModified", "l"."DefaultDays", "l"."Name"
+FROM "LeaveTypes" AS "l"
+WHERE "l"."Id" = @__get_Item_0
+LIMIT 1
+2023-08-22 19:41:10.999 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Dto.LeaveTypesVM'.
+2023-08-22 19:41:11.001 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 13.0664ms
+2023-08-22 19:41:11.003 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:41:11.005 +07:00 [INF] HTTP GET /LeaveTypes/3fa85f64-5717-4562-b3fc-2c963f66afa6 responded 200 in 20.8607 ms
+2023-08-22 19:41:11.009 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc-2c963f66afa6 - - - 200 - application/json;+charset=utf-8 28.2261ms
+2023-08-22 19:43:34.345 +07:00 [INF] Application is shutting down...
+2023-08-22 19:43:57.336 +07:00 [INF] Now listening on: http://localhost:5000
+2023-08-22 19:43:57.347 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-22 19:43:57.348 +07:00 [INF] Hosting environment: Development
+2023-08-22 19:43:57.349 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-08-22 19:49:52.610 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc- - -
+2023-08-22 19:49:52.638 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-08-22 19:49:52.641 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:49:52.659 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:49:52.847 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:49:52.869 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 205.3295ms
+2023-08-22 19:49:52.872 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:49:52.875 +07:00 [INF] HTTP GET /LeaveTypes/3fa85f64-5717-4562-b3fc- responded 400 in 238.4038 ms
+2023-08-22 19:49:52.879 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc- - - - 400 - application/problem+json;+charset=utf-8 270.5759ms
+2023-08-22 19:50:04.136 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc-sdjfl;kasjdf - -
+2023-08-22 19:50:04.138 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:50:04.139 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:50:04.147 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:50:04.149 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 7.8971ms
+2023-08-22 19:50:04.151 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:50:04.152 +07:00 [INF] HTTP GET /LeaveTypes/3fa85f64-5717-4562-b3fc-sdjfl;kasjdf responded 400 in 14.1552 ms
+2023-08-22 19:50:04.154 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc-sdjfl;kasjdf - - - 400 - application/problem+json;+charset=utf-8 17.7867ms
+2023-08-22 19:50:20.775 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/abc - -
+2023-08-22 19:50:20.778 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:50:20.779 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:50:20.784 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:50:20.786 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 4.2554ms
+2023-08-22 19:50:20.787 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:50:20.788 +07:00 [INF] HTTP GET /LeaveTypes/abc responded 400 in 10.9050 ms
+2023-08-22 19:50:20.790 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/abc - - - 400 - application/problem+json;+charset=utf-8 14.4976ms
+2023-08-22 19:50:25.035 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc-sdjfl;kasjdf - -
+2023-08-22 19:50:25.036 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:50:25.038 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:50:25.040 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:50:25.041 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 2.0815ms
+2023-08-22 19:50:25.043 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:50:25.044 +07:00 [INF] HTTP GET /LeaveTypes/3fa85f64-5717-4562-b3fc-sdjfl;kasjdf responded 400 in 7.2125 ms
+2023-08-22 19:50:25.046 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc-sdjfl;kasjdf - - - 400 - application/problem+json;+charset=utf-8 10.5983ms
+2023-08-22 19:50:28.023 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc-sdjfl;kasjdf - -
+2023-08-22 19:50:28.024 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:50:28.025 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:50:28.028 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:50:28.030 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 2.351ms
+2023-08-22 19:50:28.031 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:50:28.032 +07:00 [INF] HTTP GET /LeaveTypes/3fa85f64-5717-4562-b3fc-sdjfl;kasjdf responded 400 in 7.6861 ms
+2023-08-22 19:50:28.034 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc-sdjfl;kasjdf - - - 400 - application/problem+json;+charset=utf-8 10.8165ms
+2023-08-22 19:50:28.954 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/abc - -
+2023-08-22 19:50:28.955 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:50:28.956 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:50:28.959 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:50:28.960 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 1.7638ms
+2023-08-22 19:50:28.962 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:50:28.963 +07:00 [INF] HTTP GET /LeaveTypes/abc responded 400 in 8.6269 ms
+2023-08-22 19:50:28.966 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/abc - - - 400 - application/problem+json;+charset=utf-8 11.8661ms
+2023-08-22 19:50:28.998 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc-sdjfl;kasjdf - -
+2023-08-22 19:50:28.999 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:50:29.000 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:50:29.002 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:50:29.003 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 1.8149ms
+2023-08-22 19:50:29.005 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:50:29.006 +07:00 [INF] HTTP GET /LeaveTypes/3fa85f64-5717-4562-b3fc-sdjfl;kasjdf responded 400 in 6.8375 ms
+2023-08-22 19:50:29.008 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc-sdjfl;kasjdf - - - 400 - application/problem+json;+charset=utf-8 10.1236ms
+2023-08-22 19:52:16.534 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/asdf - -
+2023-08-22 19:52:16.535 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:52:16.536 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:52:16.538 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:52:16.539 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 1.503ms
+2023-08-22 19:52:16.540 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:52:16.541 +07:00 [INF] HTTP GET /LeaveTypes/asdf responded 400 in 6.1586 ms
+2023-08-22 19:52:16.543 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/asdf - - - 400 - application/problem+json;+charset=utf-8 8.4787ms
+2023-08-22 19:52:53.052 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/asdf - -
+2023-08-22 19:52:53.053 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:52:53.054 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:52:53.056 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:52:53.057 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 1.3142ms
+2023-08-22 19:52:53.058 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:52:53.058 +07:00 [INF] HTTP GET /LeaveTypes/asdf responded 400 in 5.7896 ms
+2023-08-22 19:52:53.060 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/asdf - - - 400 - application/problem+json;+charset=utf-8 8.4605ms
+2023-08-22 19:52:53.072 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/asdf - -
+2023-08-22 19:52:53.073 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:52:53.074 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:52:53.076 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:52:53.077 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 1.55ms
+2023-08-22 19:52:53.078 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:52:53.079 +07:00 [INF] HTTP GET /LeaveTypes/asdf responded 400 in 6.4456 ms
+2023-08-22 19:52:53.081 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/asdf - - - 400 - application/problem+json;+charset=utf-8 8.9923ms
+2023-08-22 19:52:56.460 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/asdf - -
+2023-08-22 19:52:56.461 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:52:56.462 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:52:56.464 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:52:56.465 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 1.3797ms
+2023-08-22 19:52:56.467 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:52:56.467 +07:00 [INF] HTTP GET /LeaveTypes/asdf responded 400 in 6.0663 ms
+2023-08-22 19:52:56.469 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/asdf - - - 400 - application/problem+json;+charset=utf-8 8.7276ms
+2023-08-22 19:52:59.778 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/asdf - -
+2023-08-22 19:52:59.779 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:52:59.780 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:52:59.782 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:52:59.784 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 1.5082ms
+2023-08-22 19:52:59.785 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:52:59.786 +07:00 [INF] HTTP GET /LeaveTypes/asdf responded 400 in 6.5248 ms
+2023-08-22 19:52:59.787 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/asdf - - - 400 - application/problem+json;+charset=utf-8 9.1174ms
+2023-08-22 19:57:23.504 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/jdfkjsdf - -
+2023-08-22 19:57:23.505 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:57:23.506 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:57:23.508 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:57:23.508 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 1.1569ms
+2023-08-22 19:57:23.509 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:57:23.510 +07:00 [INF] HTTP GET /LeaveTypes/jdfkjsdf responded 400 in 5.0245 ms
+2023-08-22 19:57:23.512 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/jdfkjsdf - - - 400 - application/problem+json;+charset=utf-8 7.4935ms
+2023-08-22 19:57:55.863 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/jdfkjsdf - -
+2023-08-22 19:57:55.865 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:57:55.867 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:57:55.871 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:57:55.874 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 3.3672ms
+2023-08-22 19:57:55.876 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:57:55.878 +07:00 [INF] HTTP GET /LeaveTypes/jdfkjsdf responded 400 in 13.1352 ms
+2023-08-22 19:57:55.881 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/jdfkjsdf - - - 400 - application/problem+json;+charset=utf-8 17.8818ms
+2023-08-22 19:57:55.884 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/jdfkjsdf - -
+2023-08-22 19:57:55.886 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:57:55.888 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:57:55.890 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:57:55.892 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 2.4934ms
+2023-08-22 19:57:55.896 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:57:55.898 +07:00 [INF] HTTP GET /LeaveTypes/jdfkjsdf responded 400 in 12.2348 ms
+2023-08-22 19:57:55.903 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/jdfkjsdf - - - 400 - application/problem+json;+charset=utf-8 18.2372ms
+2023-08-22 19:57:59.862 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/jdfkjsdf - -
+2023-08-22 19:57:59.863 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:57:59.864 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 19:57:59.868 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 19:57:59.870 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 2.5372ms
+2023-08-22 19:57:59.871 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 19:57:59.872 +07:00 [INF] HTTP GET /LeaveTypes/jdfkjsdf responded 400 in 9.5387 ms
+2023-08-22 19:57:59.875 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/jdfkjsdf - - - 400 - application/problem+json;+charset=utf-8 13.4197ms
+2023-08-22 20:00:42.577 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/hdfj - -
+2023-08-22 20:00:42.578 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 20:00:42.579 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 20:00:42.581 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-22 20:00:42.582 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 1.5522ms
+2023-08-22 20:00:42.583 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 20:00:42.584 +07:00 [INF] HTTP GET /LeaveTypes/hdfj responded 400 in 6.0130 ms
+2023-08-22 20:00:42.586 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/hdfj - - - 400 - application/problem+json;+charset=utf-8 8.7625ms
+2023-08-22 20:17:34.644 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc-2c963f66afa6 - -
+2023-08-22 20:17:34.645 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 20:17:34.646 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.Nullable`1[System.Guid]) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 20:17:35.089 +07:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."Id", "l"."DateCreated", "l"."DateModified", "l"."DefaultDays", "l"."Name"
+FROM "LeaveTypes" AS "l"
+WHERE "l"."Id" = @__get_Item_0
+LIMIT 1
+2023-08-22 20:17:35.142 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Dto.LeaveTypesVM'.
+2023-08-22 20:17:35.157 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 509.9553ms
+2023-08-22 20:17:35.158 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-08-22 20:17:35.159 +07:00 [INF] HTTP GET /LeaveTypes/3fa85f64-5717-4562-b3fc-2c963f66afa6 responded 200 in 514.1839 ms
+2023-08-22 20:17:35.163 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes/3fa85f64-5717-4562-b3fc-2c963f66afa6 - - - 200 - application/json;+charset=utf-8 519.1876ms
+2023-08-22 20:20:11.145 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes - -
+2023-08-22 20:20:11.146 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-08-22 20:20:11.149 +07:00 [INF] Route matched with {action = "GetLeaveTypes", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveTypes() on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 20:20:11.192 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."Id", "l"."DateCreated", "l"."DateModified", "l"."DefaultDays", "l"."Name"
+FROM "LeaveTypes" AS "l"
+2023-08-22 20:20:11.200 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LeaveManagement.Domain.Dto.LeaveTypesVM, LeaveManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-22 20:20:11.202 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web) in 51.1782ms
+2023-08-22 20:20:11.203 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-08-22 20:20:11.205 +07:00 [INF] HTTP GET /LeaveTypes responded 200 in 59.0823 ms
+2023-08-22 20:20:11.206 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes - - - 200 - application/json;+charset=utf-8 61.4310ms
+2023-08-22 20:21:46.346 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/LeaveTypes - -
+2023-08-22 20:21:46.347 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-08-22 20:21:46.348 +07:00 [INF] Route matched with {action = "GetLeaveTypes", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveTypes() on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-08-22 20:21:46.359 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."Id", "l"."DateCreated", "l"."DateModified", "l"."DefaultDays", "l"."Name"
+FROM "LeaveTypes" AS "l"
+2023-08-22 20:21:46.361 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LeaveManagement.Domain.Dto.LeaveTypesVM, LeaveManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-22 20:21:46.362 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web) in 12.7847ms
+2023-08-22 20:21:46.363 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-08-22 20:21:46.364 +07:00 [INF] HTTP GET /LeaveTypes responded 200 in 17.5317 ms
+2023-08-22 20:21:46.366 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/LeaveTypes - - - 200 - application/json;+charset=utf-8 20.1551ms
