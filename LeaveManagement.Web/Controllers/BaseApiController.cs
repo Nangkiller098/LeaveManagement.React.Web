@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace LeaveManagement.Web.Controllers
 {  
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class BaseApiController : ControllerBase
     {
         

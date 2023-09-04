@@ -30,7 +30,7 @@ namespace LeaveManagement.Web.Controllers
             return Ok(leavetype);
         }
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetLeaveType(Guid? id)
+        public async Task<IActionResult> GetLeaveType(string id)
         {
             var leavetype= await _leaveTypesRepository.GetAsync(id);
             if (leavetype == null)
@@ -41,7 +41,7 @@ namespace LeaveManagement.Web.Controllers
             return Ok(leaveTypeVM);
         }
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutLeaveType(Guid id,LeaveTypesVM leaveTypesVM)
+        public async Task<IActionResult> PutLeaveType(string id,LeaveTypesVM leaveTypesVM)
         {  
             if(id != leaveTypesVM.Id)
             {
@@ -58,7 +58,7 @@ namespace LeaveManagement.Web.Controllers
 
         }
         [HttpDelete]
-        public async Task<IActionResult> DeleteLeaveType(Guid id)
+        public async Task<IActionResult> DeleteLeaveType(string id)
         {
             var leaveType = await _leaveTypesRepository.GetAsync(id);
             if(leaveType==null)
@@ -68,7 +68,7 @@ namespace LeaveManagement.Web.Controllers
             await _leaveTypesRepository.DeleteAsync(id);
             return Ok();
         }
-        private async Task<bool> LeaveTypeExists(Guid id)
+        private async Task<bool> LeaveTypeExists(string id)
         {
             return await _leaveTypesRepository.Exits(id);
         }

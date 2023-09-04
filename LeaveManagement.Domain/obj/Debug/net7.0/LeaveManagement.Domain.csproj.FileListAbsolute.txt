@@ -1,6 +1,7 @@
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Domain\bin\Debug\net7.0\LeaveManagement.Domain.deps.json
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Domain\bin\Debug\net7.0\LeaveManagement.Domain.dll
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Domain\bin\Debug\net7.0\LeaveManagement.Domain.pdb
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Domain\obj\Debug\net7.0\LeaveManagement.Domain.csproj.AssemblyReference.cache
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Domain\obj\Debug\net7.0\LeaveManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Domain\obj\Debug\net7.0\LeaveManagement.Domain.AssemblyInfoInputs.cache
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Domain\obj\Debug\net7.0\LeaveManagement.Domain.AssemblyInfo.cs
@@ -9,4 +10,3 @@ D:\Projects\LeaveManagement.React.Web\LeaveManagement.Domain\obj\Debug\net7.0\Le
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Domain\obj\Debug\net7.0\refint\LeaveManagement.Domain.dll
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Domain\obj\Debug\net7.0\LeaveManagement.Domain.pdb
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Domain\obj\Debug\net7.0\ref\LeaveManagement.Domain.dll
-D:\Projects\LeaveManagement.React.Web\LeaveManagement.Domain\obj\Debug\net7.0\LeaveManagement.Domain.csproj.AssemblyReference.cache

@@ -25,20 +25,20 @@ namespace LeaveManagement.Application.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(Guid id)
+        public async Task DeleteAsync(string id)
         {
             var entity = await GetAsync(id);
             _context.Set<T>().Remove(entity);
             await _context.SaveChangesAsync();
         }
 
-        public async Task<bool> Exists(Guid id)
+        public async Task<bool> Exists(string id)
         {
             var entity = await GetAsync(id);
             return entity != null;
         }
 
-        public Task<bool> Exits(Guid id)
+        public Task<bool> Exits(string id)
         {
            var entity = GetAsync(id);
             return Task.FromResult(entity != null);
@@ -49,7 +49,7 @@ namespace LeaveManagement.Application.Repositories
             return await _context.Set<T>().ToListAsync();
         }
 
-        public async Task<T> GetAsync(Guid? id)
+        public async Task<T> GetAsync(string id)
         {
             if (id == null)
             {
