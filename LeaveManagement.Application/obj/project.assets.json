@@ -2218,8 +2218,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj": {
-              "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj"
+            "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj": {
+              "projectPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj"
             },
             "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj": {
               "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj"

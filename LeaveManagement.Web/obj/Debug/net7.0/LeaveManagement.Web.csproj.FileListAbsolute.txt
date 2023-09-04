@@ -93,3 +93,5 @@ D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\obj\Debug\net7.0\refin
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\obj\Debug\net7.0\LeaveManagement.Web.pdb
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\obj\Debug\net7.0\LeaveManagement.Web.genruntimeconfig.cache
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\obj\Debug\net7.0\ref\LeaveManagement.Web.dll
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Npgsql.dll
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

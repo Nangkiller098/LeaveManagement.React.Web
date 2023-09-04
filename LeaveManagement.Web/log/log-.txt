@@ -4254,3 +4254,14 @@ FROM "LeaveTypes" AS "l"
 2023-09-04 16:33:19.868 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
 2023-09-04 16:33:19.869 +07:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 751.3257 ms
 2023-09-04 16:33:19.873 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - - - 200 - application/json;+charset=utf-8 756.6998ms
+2023-09-04 16:41:13.963 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-04 16:41:13.971 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-04 16:41:13.971 +07:00 [INF] Hosting environment: Development
+2023-09-04 16:41:13.971 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-04 16:41:14.131 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-04 16:41:14.250 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 120.2839ms
+2023-09-04 16:41:14.321 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-04 16:41:14.326 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 3.9668ms
+2023-09-04 16:41:14.496 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-04 16:41:14.582 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 86.4479ms
+2023-09-04 16:41:19.399 +07:00 [INF] Application is shutting down...
