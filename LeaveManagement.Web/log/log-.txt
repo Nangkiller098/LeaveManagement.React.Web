@@ -4197,3 +4197,60 @@ CREATE UNIQUE INDEX "UserNameIndex" ON "AspNetUsers" ("NormalizedUserName");
 2023-09-04 15:40:08.851 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
 VALUES ('20230904083943_addInitialData', '7.0.10');
+2023-09-04 16:29:23.268 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-04 16:29:23.279 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-04 16:29:23.279 +07:00 [INF] Hosting environment: Development
+2023-09-04 16:29:23.280 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-04 16:29:29.503 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - -
+2023-09-04 16:29:29.550 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-04 16:29:29.554 +07:00 [INF] HTTP GET / responded 404 in 6.5878 ms
+2023-09-04 16:29:29.569 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - - - 404 0 - 70.0761ms
+2023-09-04 16:29:32.117 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - -
+2023-09-04 16:29:32.119 +07:00 [INF] HTTP GET / responded 404 in 0.5182 ms
+2023-09-04 16:29:32.120 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - - - 404 0 - 3.4509ms
+2023-09-04 16:29:36.226 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-04 16:29:36.280 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 53.9754ms
+2023-09-04 16:29:36.544 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-04 16:29:36.614 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 70.4133ms
+2023-09-04 16:29:42.942 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 96
+2023-09-04 16:29:42.945 +07:00 [INF] CORS policy execution successful.
+2023-09-04 16:29:42.948 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-04 16:29:42.964 +07:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(LeaveManagement.Domain.Model.Users.ApiUserDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-04 16:29:43.416 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Model.Users.ApiUserDto'.
+2023-09-04 16:29:43.422 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web) in 453.8385ms
+2023-09-04 16:29:43.423 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-04 16:29:43.424 +07:00 [INF] HTTP POST /api/Account/register responded 200 in 480.1264 ms
+2023-09-04 16:29:43.427 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 96 - 200 - application/json;+charset=utf-8 485.0730ms
+2023-09-04 16:30:27.049 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 105
+2023-09-04 16:30:27.051 +07:00 [INF] CORS policy execution successful.
+2023-09-04 16:30:27.052 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-04 16:30:27.053 +07:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(LeaveManagement.Domain.Model.Users.ApiUserDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-04 16:30:27.062 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Model.Users.ApiUserDto'.
+2023-09-04 16:30:27.064 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web) in 9.459ms
+2023-09-04 16:30:27.065 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-04 16:30:27.066 +07:00 [INF] HTTP POST /api/Account/register responded 200 in 15.7069 ms
+2023-09-04 16:30:27.068 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 105 - 200 - application/json;+charset=utf-8 18.8986ms
+2023-09-04 16:30:53.520 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 105
+2023-09-04 16:30:53.521 +07:00 [INF] CORS policy execution successful.
+2023-09-04 16:30:53.522 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-04 16:30:53.522 +07:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(LeaveManagement.Domain.Model.Users.ApiUserDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-04 16:30:53.530 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Model.Users.ApiUserDto'.
+2023-09-04 16:30:53.531 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web) in 7.1456ms
+2023-09-04 16:30:53.532 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-04 16:30:53.533 +07:00 [INF] HTTP POST /api/Account/register responded 200 in 11.3605 ms
+2023-09-04 16:30:53.534 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 105 - 200 - application/json;+charset=utf-8 13.8310ms
+2023-09-04 16:33:08.381 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-04 16:33:08.383 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 1.5463ms
+2023-09-04 16:33:08.613 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-04 16:33:08.616 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.7853ms
+2023-09-04 16:33:19.117 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - -
+2023-09-04 16:33:19.118 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-09-04 16:33:19.122 +07:00 [INF] Route matched with {action = "GetLeaveTypes", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveTypes() on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-09-04 16:33:19.823 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."Id", "l"."DateCreated", "l"."DateModified", "l"."DefaultDays", "l"."Name"
+FROM "LeaveTypes" AS "l"
+2023-09-04 16:33:19.860 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LeaveManagement.Domain.Dto.LeaveTypesVM, LeaveManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-04 16:33:19.867 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web) in 743.9223ms
+2023-09-04 16:33:19.868 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-09-04 16:33:19.869 +07:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 751.3257 ms
+2023-09-04 16:33:19.873 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - - - 200 - application/json;+charset=utf-8 756.6998ms
