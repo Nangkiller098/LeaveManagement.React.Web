@@ -1,6 +1,7 @@
 using LeaveManagement.Application.Contracts;
 using LeaveManagement.Application.MappingProfile;
 using LeaveManagement.Application.Repositories;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 using Serilog;
@@ -18,6 +19,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ReactDbContext>(opt =>
     opt.UseSqlite(builder.Configuration.GetConnectionString("SqliteConnection")));
 
+builder.Services.AddIdentityCore<IdentityUser>()
+.AddRoles<IdentityRole>()
+
+;
 //config CORS
 builder.Services.AddCors(opt=>{
     opt.AddPolicy("AllowAll",

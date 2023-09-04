@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3wD0MhFDMtVIf4H1RAWUIcI+Ja0gISizZ8T8OjcW2DcpxMUFHKn/VhXWWCWGDKgyRu31azOMnH4FEEzWS3FqIQ==",
+  "dgSpecHash": "fWD7vjiWy+OyFrQogUwvl2ykzDv9Quwg7ROYBdJc7EzjqTqVYYkqS66JoE+3dFellTblHCm63+okBRJ0q1s/Yw==",
   "success": true,
   "projectFilePath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,8 @@
     "C:\\Users\\ripdo\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\ripdo\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\ripdo\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\ripdo\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\ripdo\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.4\\npgsql.entityframeworkcore.postgresql.7.0.4.nupkg.sha512",
     "C:\\Users\\ripdo\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512",
     "C:\\Users\\ripdo\\.nuget\\packages\\serilog.aspnetcore\\7.0.0\\serilog.aspnetcore.7.0.0.nupkg.sha512",
     "C:\\Users\\ripdo\\.nuget\\packages\\serilog.expressions\\3.4.1\\serilog.expressions.3.4.1.nupkg.sha512",

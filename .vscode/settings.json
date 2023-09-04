@@ -1,3 +1,4 @@
 {
-    "dotnet.defaultSolution": "LeaveManagement.React.Web.sln"
+    "dotnet.defaultSolution": "LeaveManagement.React.Web.sln",
+    "git.ignoreLimitWarning": true
 }
