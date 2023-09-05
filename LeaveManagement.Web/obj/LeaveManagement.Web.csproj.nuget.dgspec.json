@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj": {}
+    "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj": {}
   },
   "projects": {
     "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Application\\LeaveManagement.Application.csproj": {
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj": {
-                "projectPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj"
+              "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj": {
+                "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj"
               },
               "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj": {
                 "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj"
@@ -78,14 +78,14 @@
         }
       }
     },
-    "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj": {
+    "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj",
+        "projectUniqueName": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj",
         "projectName": "LeaveManagement.Domain",
-        "projectPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj",
+        "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\Hengsomnang\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\obj\\",
+        "outputPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hengsomnang\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -171,8 +171,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj": {
-                "projectPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj"
+              "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj": {
+                "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj"
               }
             }
           }
@@ -242,14 +242,14 @@
         }
       }
     },
-    "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj": {
+    "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj",
+        "projectUniqueName": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj",
         "projectName": "LeaveManagement.Web",
-        "projectPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj",
+        "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj",
         "packagesPath": "C:\\Users\\Hengsomnang\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\obj\\",
+        "outputPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hengsomnang\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -283,6 +283,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",

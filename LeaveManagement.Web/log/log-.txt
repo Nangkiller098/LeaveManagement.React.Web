@@ -4265,3 +4265,260 @@ FROM "LeaveTypes" AS "l"
 2023-09-04 16:41:14.496 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
 2023-09-04 16:41:14.582 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 86.4479ms
 2023-09-04 16:41:19.399 +07:00 [INF] Application is shutting down...
+2023-09-05 09:34:11.484 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-05 09:34:11.492 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-05 09:34:11.493 +07:00 [INF] Hosting environment: Development
+2023-09-05 09:34:11.493 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-05 09:34:11.660 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-05 09:34:11.779 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 120.3943ms
+2023-09-05 09:34:11.815 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-05 09:34:11.818 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 2.0458ms
+2023-09-05 09:34:11.953 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-05 09:34:12.027 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.2759ms
+2023-09-05 09:37:58.772 +07:00 [INF] Application is shutting down...
+2023-09-05 09:43:45.237 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-05 09:43:45.248 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-05 09:43:45.249 +07:00 [INF] Hosting environment: Development
+2023-09-05 09:43:45.250 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-05 09:44:07.175 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - -
+2023-09-05 09:44:07.205 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-05 09:44:07.211 +07:00 [INF] HTTP GET / responded 404 in 5.9263 ms
+2023-09-05 09:44:07.221 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - - - 404 0 - 47.3065ms
+2023-09-05 09:44:12.432 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-05 09:44:12.491 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 59.6357ms
+2023-09-05 09:44:12.733 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-05 09:44:12.811 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 77.7070ms
+2023-09-05 09:45:38.602 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - -
+2023-09-05 09:45:38.608 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-09-05 09:45:38.627 +07:00 [INF] Route matched with {action = "GetLeaveTypes", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveTypes() on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-09-05 09:45:40.065 +07:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."Id", "l"."DateCreated", "l"."DateModified", "l"."DefaultDays", "l"."Name"
+FROM "LeaveTypes" AS "l"
+2023-09-05 09:45:40.109 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LeaveManagement.Domain.Dto.LeaveTypesVM, LeaveManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-05 09:45:40.121 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web) in 1489.9484ms
+2023-09-05 09:45:40.123 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-09-05 09:45:40.124 +07:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 1518.9448 ms
+2023-09-05 09:45:40.135 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - - - 200 - application/json;+charset=utf-8 1532.2131ms
+2023-09-05 09:46:07.265 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes/1FA85F64-5717-4562-B3FC-2C963F66AFA6 - -
+2023-09-05 09:46:07.270 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-09-05 09:46:07.281 +07:00 [INF] Route matched with {action = "GetLeaveType", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveType(System.String) on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-09-05 09:46:07.387 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."Id", "l"."DateCreated", "l"."DateModified", "l"."DefaultDays", "l"."Name"
+FROM "LeaveTypes" AS "l"
+WHERE "l"."Id" = @__p_0
+LIMIT 1
+2023-09-05 09:46:07.392 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Dto.LeaveTypesVM'.
+2023-09-05 09:46:07.395 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web) in 111.6321ms
+2023-09-05 09:46:07.396 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveType (LeaveManagement.Web)'
+2023-09-05 09:46:07.398 +07:00 [INF] HTTP GET /api/LeaveTypes/1FA85F64-5717-4562-B3FC-2C963F66AFA6 responded 200 in 130.9604 ms
+2023-09-05 09:46:07.400 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes/1FA85F64-5717-4562-B3FC-2C963F66AFA6 - - - 200 - application/json;+charset=utf-8 135.1254ms
+2023-09-05 09:46:12.642 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-05 09:46:12.644 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 2.2557ms
+2023-09-05 09:46:12.852 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-05 09:46:12.862 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.5694ms
+2023-09-05 09:47:35.635 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 106
+2023-09-05 09:47:35.638 +07:00 [INF] CORS policy execution successful.
+2023-09-05 09:47:35.639 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:47:35.643 +07:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(LeaveManagement.Domain.Model.Users.ApiUserDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-05 09:47:35.748 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-05 09:47:35.852 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (DbType = Int32), @p2='?' (Size = 36), @p3='?' (Size = 16), @p4='?' (DbType = Boolean), @p5='?', @p6='?' (Size = 4), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 16), @p10='?' (Size = 16), @p11='?' (Size = 84), @p12='?', @p13='?' (DbType = Boolean), @p14='?' (Size = 32), @p15='?' (DbType = Boolean), @p16='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FristName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2023-09-05 09:47:35.866 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2023-09-05 09:47:35.885 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."RoleId"
+FROM "AspNetUserRoles" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."RoleId" = @__p_1
+LIMIT 1
+2023-09-05 09:47:35.891 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2023-09-05 09:47:35.903 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-05 09:47:35.923 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUserRoles" ("RoleId", "UserId")
+VALUES (@p0, @p1);
+2023-09-05 09:47:35.927 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@p16='?' (Size = 36), @p0='?' (DbType = Int32), @p1='?' (Size = 36), @p17='?' (Size = 36), @p2='?' (Size = 16), @p3='?' (DbType = Boolean), @p4='?', @p5='?' (Size = 4), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 16), @p9='?' (Size = 16), @p10='?' (Size = 84), @p11='?', @p12='?' (DbType = Boolean), @p13='?' (Size = 32), @p14='?' (DbType = Boolean), @p15='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FristName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "SecurityStamp" = @p13, "TwoFactorEnabled" = @p14, "UserName" = @p15
+WHERE "Id" = @p16 AND "ConcurrencyStamp" = @p17
+RETURNING 1;
+2023-09-05 09:47:35.939 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Model.Users.ApiUserDto'.
+2023-09-05 09:47:35.941 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web) in 296.9419ms
+2023-09-05 09:47:35.943 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:47:35.944 +07:00 [INF] HTTP POST /api/Account/register responded 200 in 307.4338 ms
+2023-09-05 09:47:35.945 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 106 - 200 - application/json;+charset=utf-8 310.4670ms
+2023-09-05 09:47:38.327 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 106
+2023-09-05 09:47:38.329 +07:00 [INF] CORS policy execution successful.
+2023-09-05 09:47:38.330 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:47:38.331 +07:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(LeaveManagement.Domain.Model.Users.ApiUserDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-05 09:47:38.387 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-05 09:47:38.393 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Model.Users.ApiUserDto'.
+2023-09-05 09:47:38.394 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web) in 61.3046ms
+2023-09-05 09:47:38.395 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:47:38.396 +07:00 [INF] HTTP POST /api/Account/register responded 200 in 67.1002 ms
+2023-09-05 09:47:38.398 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 106 - 200 - application/json;+charset=utf-8 70.5578ms
+2023-09-05 09:47:42.484 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 106
+2023-09-05 09:47:42.486 +07:00 [INF] CORS policy execution successful.
+2023-09-05 09:47:42.487 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:47:42.488 +07:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(LeaveManagement.Domain.Model.Users.ApiUserDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-05 09:47:42.551 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-05 09:47:42.554 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Model.Users.ApiUserDto'.
+2023-09-05 09:47:42.555 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web) in 64.994ms
+2023-09-05 09:47:42.556 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:47:42.558 +07:00 [INF] HTTP POST /api/Account/register responded 200 in 71.6150 ms
+2023-09-05 09:47:42.559 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 106 - 200 - application/json;+charset=utf-8 74.8118ms
+2023-09-05 09:47:43.138 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 106
+2023-09-05 09:47:43.139 +07:00 [INF] CORS policy execution successful.
+2023-09-05 09:47:43.139 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:47:43.140 +07:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(LeaveManagement.Domain.Model.Users.ApiUserDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-05 09:47:43.194 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-05 09:47:43.198 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Model.Users.ApiUserDto'.
+2023-09-05 09:47:43.200 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web) in 58.214ms
+2023-09-05 09:47:43.201 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:47:43.202 +07:00 [INF] HTTP POST /api/Account/register responded 200 in 63.0755 ms
+2023-09-05 09:47:43.203 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 106 - 200 - application/json;+charset=utf-8 65.6602ms
+2023-09-05 09:47:43.767 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 106
+2023-09-05 09:47:43.768 +07:00 [INF] CORS policy execution successful.
+2023-09-05 09:47:43.769 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:47:43.770 +07:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(LeaveManagement.Domain.Model.Users.ApiUserDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-05 09:47:43.824 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-05 09:47:43.827 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Model.Users.ApiUserDto'.
+2023-09-05 09:47:43.828 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web) in 56.3224ms
+2023-09-05 09:47:43.829 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:47:43.830 +07:00 [INF] HTTP POST /api/Account/register responded 200 in 61.7463 ms
+2023-09-05 09:47:43.832 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 106 - 200 - application/json;+charset=utf-8 64.4867ms
+2023-09-05 09:48:28.776 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 106
+2023-09-05 09:48:28.777 +07:00 [INF] CORS policy execution successful.
+2023-09-05 09:48:28.778 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:48:28.779 +07:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(LeaveManagement.Domain.Model.Users.ApiUserDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-05 09:48:28.833 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-05 09:48:28.836 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Model.Users.ApiUserDto'.
+2023-09-05 09:48:28.837 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web) in 56.5345ms
+2023-09-05 09:48:28.838 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:48:28.839 +07:00 [INF] HTTP POST /api/Account/register responded 200 in 61.6427 ms
+2023-09-05 09:48:28.840 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 106 - 200 - application/json;+charset=utf-8 64.4469ms
+2023-09-05 09:49:44.661 +07:00 [INF] Application is shutting down...
+2023-09-05 09:49:47.372 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-05 09:49:47.382 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-05 09:49:47.382 +07:00 [INF] Hosting environment: Development
+2023-09-05 09:49:47.382 +07:00 [INF] Content root path: d:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-05 09:49:47.516 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-05 09:49:47.619 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 104.5674ms
+2023-09-05 09:49:47.803 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-05 09:49:47.887 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 84.2951ms
+2023-09-05 09:49:54.220 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 96
+2023-09-05 09:49:54.227 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-05 09:49:54.228 +07:00 [INF] CORS policy execution successful.
+2023-09-05 09:49:54.234 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:49:54.251 +07:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(LeaveManagement.Domain.Model.Users.ApiUserDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-05 09:50:47.360 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Model.Users.ApiUserDto'.
+2023-09-05 09:50:47.375 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web) in 53115.914ms
+2023-09-05 09:50:47.377 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:50:47.379 +07:00 [INF] HTTP POST /api/Account/register responded 200 in 53152.6951 ms
+2023-09-05 09:50:47.381 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 96 - 200 - application/json;+charset=utf-8 53161.5303ms
+2023-09-05 09:52:02.482 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 115
+2023-09-05 09:52:02.490 +07:00 [INF] CORS policy execution successful.
+2023-09-05 09:52:02.493 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:52:02.494 +07:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(LeaveManagement.Domain.Model.Users.ApiUserDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-05 09:52:11.369 +07:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedUserName_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-05 09:52:11.509 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (DbType = Int32), @p2='?' (Size = 36), @p3='?' (Size = 21), @p4='?' (DbType = Boolean), @p5='?', @p6='?' (Size = 8), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 21), @p10='?' (Size = 21), @p11='?' (Size = 84), @p12='?', @p13='?' (DbType = Boolean), @p14='?' (Size = 32), @p15='?' (DbType = Boolean), @p16='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FristName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2023-09-05 09:52:11.527 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2023-09-05 09:52:11.557 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."RoleId"
+FROM "AspNetUserRoles" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."RoleId" = @__p_1
+LIMIT 1
+2023-09-05 09:52:11.562 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2023-09-05 09:52:11.573 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-05 09:52:11.595 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUserRoles" ("RoleId", "UserId")
+VALUES (@p0, @p1);
+2023-09-05 09:52:11.597 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@p16='?' (Size = 36), @p0='?' (DbType = Int32), @p1='?' (Size = 36), @p17='?' (Size = 36), @p2='?' (Size = 21), @p3='?' (DbType = Boolean), @p4='?', @p5='?' (Size = 8), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 21), @p9='?' (Size = 21), @p10='?' (Size = 84), @p11='?', @p12='?' (DbType = Boolean), @p13='?' (Size = 32), @p14='?' (DbType = Boolean), @p15='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FristName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "SecurityStamp" = @p13, "TwoFactorEnabled" = @p14, "UserName" = @p15
+WHERE "Id" = @p16 AND "ConcurrencyStamp" = @p17
+RETURNING 1;
+2023-09-05 09:52:22.915 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Model.Users.ApiUserDto'.
+2023-09-05 09:52:22.916 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web) in 20422.3644ms
+2023-09-05 09:52:22.916 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:52:22.916 +07:00 [INF] HTTP POST /api/Account/register responded 200 in 20428.1594 ms
+2023-09-05 09:52:22.921 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 115 - 200 - application/json;+charset=utf-8 20440.4010ms
+2023-09-05 09:52:29.077 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 115
+2023-09-05 09:52:29.078 +07:00 [INF] CORS policy execution successful.
+2023-09-05 09:52:29.079 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:52:29.079 +07:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(LeaveManagement.Domain.Model.Users.ApiUserDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-05 09:52:32.357 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 21)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-05 09:52:50.193 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Model.Users.ApiUserDto'.
+2023-09-05 09:52:50.194 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web) in 21114.2006ms
+2023-09-05 09:52:50.194 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Register (LeaveManagement.Web)'
+2023-09-05 09:52:50.194 +07:00 [INF] HTTP POST /api/Account/register responded 200 in 21115.9166 ms
+2023-09-05 09:52:50.194 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/register application/json 115 - 200 - application/json;+charset=utf-8 21117.0107ms
+2023-09-05 10:07:20.718 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-05 10:07:20.726 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-05 10:07:20.727 +07:00 [INF] Hosting environment: Development
+2023-09-05 10:07:20.727 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-05 10:07:20.859 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-05 10:07:20.948 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 90.0574ms
+2023-09-05 10:07:20.992 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-05 10:07:20.994 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 1.9643ms
+2023-09-05 10:07:21.138 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-05 10:07:21.209 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 70.7612ms
+2023-09-05 10:09:43.621 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-05 10:09:43.633 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-05 10:09:43.633 +07:00 [INF] Hosting environment: Development
+2023-09-05 10:09:43.633 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-05 10:10:20.868 +07:00 [INF] Application is shutting down...

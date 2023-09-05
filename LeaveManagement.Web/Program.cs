@@ -1,9 +1,12 @@
+using System.Text;
 using LeaveManagement.Application.Contracts;
 using LeaveManagement.Application.MappingProfile;
 using LeaveManagement.Application.Repositories;
 using LeaveManagement.Domain.Model;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Persistence;
 using Serilog;
 
@@ -35,6 +38,25 @@ builder.Host.UseSerilog((ctx,lc)=>lc.WriteTo.Console().ReadFrom.Configuration(ct
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<ILeaveTypesRepository, LeaveTypesRepository>();
 builder.Services.AddScoped<IAuthManager,AuthManager>();
+
+//add JWT Authentication 
+builder.Services.AddAuthentication(opt=>{
+    opt.DefaultAuthenticateScheme=JwtBearerDefaults.AuthenticationScheme; //"Bearer"
+    opt.DefaultChallengeScheme=JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(opt=>{
+    opt.TokenValidationParameters= new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey=true, //for prevent trying to scope token if they get the key they still can't use it
+        ValidateIssuer=true, //make sure came from our user
+        ValidateAudience=true, //came from user who recongine
+        ValidateLifetime=true, //no lifetime must expire
+        ClockSkew=TimeSpan.Zero,
+        ValidIssuer=builder.Configuration["JwtSettings:Issuer"],
+        ValidAudience=builder.Configuration["JwtSettings:Audience"],
+        IssuerSigningKey=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Key"])),
+    };
+});
+
 //autoMapper
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 var app = builder.Build();

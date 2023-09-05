@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using LeaveManagement.Application.Contracts;
-using LeaveManagement.Domain.Model;
 using LeaveManagement.Domain.Model.Users;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,9 +11,7 @@ namespace LeaveManagement.Web.Controllers
 
         public AccountController(IAuthManager authManager)
         {
-            _authManager = authManager;
-           
-            
+            _authManager = authManager;         
         }
         //POST: api/Account/register
         [HttpPost]
@@ -37,6 +30,21 @@ namespace LeaveManagement.Web.Controllers
                 }            
             }
             return Ok(apiUserDto);
+        }
+        //Post: api/Account/login
+        [HttpPost]
+        [Route("login")]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult> Login([FromBody] LoginDto loginDto)
+        {
+            var isValidUser = await _authManager.Login(loginDto);
+            if(!isValidUser)
+            {
+                return Unauthorized();
+            }
+            return Ok();
         }
     }
 }
