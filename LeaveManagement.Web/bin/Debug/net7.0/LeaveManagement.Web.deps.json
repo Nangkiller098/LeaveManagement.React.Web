@@ -762,6 +762,7 @@
         "dependencies": {
           "LeaveManagement.Domain": "1.0.0",
           "LeaveManagement.Persistence": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.10",
           "Serilog.AspNetCore": "7.0.0",
           "Serilog.Expressions": "3.4.1",
           "Serilog.Sinks.Seq": "5.2.2"

@@ -4522,3 +4522,493 @@ LIMIT 1
 2023-09-05 10:09:43.633 +07:00 [INF] Hosting environment: Development
 2023-09-05 10:09:43.633 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
 2023-09-05 10:10:20.868 +07:00 [INF] Application is shutting down...
+2023-09-06 15:57:50.442 +07:00 [INF] User profile is available. Using 'C:\Users\Hengsomnang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-06 15:57:50.559 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-06 15:57:50.560 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-06 15:57:50.560 +07:00 [INF] Hosting environment: Development
+2023-09-06 15:57:50.561 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-06 15:57:50.830 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-06 15:57:50.991 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 163.7418ms
+2023-09-06 15:57:51.073 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-06 15:57:51.076 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 2.4823ms
+2023-09-06 15:57:51.406 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-06 15:57:51.504 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 98.6122ms
+2023-09-06 15:58:07.469 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61
+2023-09-06 15:58:07.478 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-06 15:58:07.480 +07:00 [INF] CORS policy execution successful.
+2023-09-06 15:58:08.377 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-06 15:58:08.407 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(LeaveManagement.Domain.Model.Users.LoginDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-06 15:58:10.801 +07:00 [INF] Executed DbCommand (16ms) [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-09-06 15:58:11.043 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-06 15:58:11.058 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2023-09-06 15:58:11.441 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Dto.Users.AuthResponseDto'.
+2023-09-06 15:58:11.449 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web) in 3037.0958ms
+2023-09-06 15:58:11.450 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-06 15:58:11.452 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 3975.2989 ms
+2023-09-06 15:58:11.462 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61 - 200 - application/json;+charset=utf-8 3992.7298ms
+2023-09-06 16:05:00.659 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61
+2023-09-06 16:05:00.662 +07:00 [INF] CORS policy execution successful.
+2023-09-06 16:05:00.663 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-06 16:05:00.664 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(LeaveManagement.Domain.Model.Users.LoginDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-06 16:05:00.742 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-09-06 16:05:00.840 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-06 16:05:00.841 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2023-09-06 16:05:00.842 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Dto.Users.AuthResponseDto'.
+2023-09-06 16:05:00.843 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web) in 179.2158ms
+2023-09-06 16:05:00.843 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-06 16:05:00.843 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 181.8430 ms
+2023-09-06 16:05:00.844 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61 - 200 - application/json;+charset=utf-8 184.6291ms
+2023-09-06 16:13:48.702 +07:00 [INF] Application is shutting down...
+2023-09-06 16:15:23.358 +07:00 [INF] User profile is available. Using 'C:\Users\Hengsomnang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-06 16:15:23.543 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-06 16:15:23.549 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-06 16:15:23.551 +07:00 [INF] Hosting environment: Development
+2023-09-06 16:15:23.551 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-06 16:15:23.916 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-06 16:15:24.108 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 198.2172ms
+2023-09-06 16:15:24.181 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-06 16:15:24.184 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 3.4556ms
+2023-09-06 16:15:24.768 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-06 16:15:24.893 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.9186ms
+2023-09-06 16:15:32.463 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - -
+2023-09-06 16:15:32.469 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-06 16:15:32.496 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:15:32.500 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:15:32.502 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 34.1130 ms
+2023-09-06 16:15:32.504 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - - - 401 0 - 41.0890ms
+2023-09-06 16:16:20.659 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61
+2023-09-06 16:16:20.664 +07:00 [INF] CORS policy execution successful.
+2023-09-06 16:16:20.670 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:16:20.670 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:16:20.670 +07:00 [INF] HTTP POST /api/Account/login responded 401 in 8.0345 ms
+2023-09-06 16:16:20.671 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61 - 401 0 - 12.2127ms
+2023-09-06 16:16:46.215 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-06 16:16:46.227 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 12.1879ms
+2023-09-06 16:16:46.275 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-06 16:16:46.276 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.7491ms
+2023-09-06 16:16:46.636 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-06 16:16:46.649 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 12.7427ms
+2023-09-06 16:16:58.552 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-06 16:16:58.566 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 13.5073ms
+2023-09-06 16:16:58.725 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-06 16:16:58.725 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.4815ms
+2023-09-06 16:16:58.857 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-06 16:16:58.864 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.2213ms
+2023-09-06 16:16:59.751 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-06 16:16:59.765 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 13.7343ms
+2023-09-06 16:16:59.825 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-06 16:16:59.826 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3681ms
+2023-09-06 16:16:59.927 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-06 16:16:59.933 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.2367ms
+2023-09-06 16:17:04.961 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 57
+2023-09-06 16:17:05.016 +07:00 [INF] CORS policy execution successful.
+2023-09-06 16:17:05.020 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-06 16:17:05.042 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(LeaveManagement.Domain.Model.Users.LoginDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-06 16:17:06.196 +07:00 [INF] Executed DbCommand (15ms) [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-09-06 16:17:06.388 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-09-06 16:17:06.393 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web) in 1348.1154ms
+2023-09-06 16:17:06.394 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-06 16:17:06.394 +07:00 [INF] HTTP POST /api/Account/login responded 401 in 1431.9496 ms
+2023-09-06 16:17:06.403 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 57 - 401 - application/problem+json;+charset=utf-8 1442.1472ms
+2023-09-06 16:17:13.586 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61
+2023-09-06 16:17:13.589 +07:00 [INF] CORS policy execution successful.
+2023-09-06 16:17:13.590 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-06 16:17:13.591 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(LeaveManagement.Domain.Model.Users.LoginDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-06 16:17:13.667 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-09-06 16:17:13.807 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-06 16:17:13.825 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2023-09-06 16:17:13.916 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Dto.Users.AuthResponseDto'.
+2023-09-06 16:17:13.917 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web) in 326.5731ms
+2023-09-06 16:17:13.918 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-06 16:17:13.918 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 328.3652 ms
+2023-09-06 16:17:13.918 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61 - 200 - application/json;+charset=utf-8 332.2618ms
+2023-09-06 16:18:19.622 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 64
+2023-09-06 16:18:19.623 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-06 16:18:19.623 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(LeaveManagement.Domain.Model.Users.LoginDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-06 16:18:19.653 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-09-06 16:18:19.743 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-06 16:18:19.743 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2023-09-06 16:18:19.745 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Dto.Users.AuthResponseDto'.
+2023-09-06 16:18:19.745 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web) in 122.191ms
+2023-09-06 16:18:19.745 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-06 16:18:19.745 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 122.8492 ms
+2023-09-06 16:18:19.747 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 64 - 200 - application/json;+charset=utf-8 124.5746ms
+2023-09-06 16:18:51.936 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - -
+2023-09-06 16:18:51.939 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:18:51.939 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:18:51.939 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 2.1062 ms
+2023-09-06 16:18:51.939 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - - - 401 0 - 3.3090ms
+2023-09-06 16:19:59.841 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - -
+2023-09-06 16:19:59.888 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:19:59 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-06 16:19:59.895 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:19:59 AM'.
+2023-09-06 16:19:59.895 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:19:59.899 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:19:59.900 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 57.5520 ms
+2023-09-06 16:19:59.900 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - - - 401 0 - 58.3520ms
+2023-09-06 16:20:41.866 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - -
+2023-09-06 16:20:41.868 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:20:41 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-06 16:20:41.868 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:20:41 AM'.
+2023-09-06 16:20:41.869 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:20:41.869 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:20:41.869 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 2.5987 ms
+2023-09-06 16:20:41.869 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - - - 401 0 - 3.4070ms
+2023-09-06 16:21:26.649 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-06 16:21:26.651 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 1.5780ms
+2023-09-06 16:21:26.738 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-06 16:21:26.738 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.5134ms
+2023-09-06 16:21:27.088 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-06 16:21:27.090 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.8419ms
+2023-09-06 16:21:34.985 +07:00 [INF] Application is shutting down...
+2023-09-06 16:21:50.734 +07:00 [INF] User profile is available. Using 'C:\Users\Hengsomnang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-06 16:21:50.821 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-06 16:21:50.822 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-06 16:21:50.822 +07:00 [INF] Hosting environment: Development
+2023-09-06 16:21:50.822 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-06 16:21:51.054 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-06 16:21:51.216 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 163.8335ms
+2023-09-06 16:21:51.289 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-06 16:21:51.292 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 2.9744ms
+2023-09-06 16:21:51.549 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-06 16:21:51.678 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 128.9115ms
+2023-09-06 16:21:55.212 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - -
+2023-09-06 16:21:55.218 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-06 16:21:55.326 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:21:55 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-06 16:21:55.333 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:21:55 AM'.
+2023-09-06 16:21:55.338 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:21:55.341 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:21:55.343 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 126.0330 ms
+2023-09-06 16:21:55.345 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - - - 401 0 - 132.7721ms
+2023-09-06 16:22:51.851 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json -
+2023-09-06 16:22:51.857 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:22:51 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-06 16:22:51.858 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:22:51 AM'.
+2023-09-06 16:22:51.860 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:22:51.861 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:22:51.861 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 7.4405 ms
+2023-09-06 16:22:51.861 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json - - 401 0 - 10.0586ms
+2023-09-06 16:31:52.307 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json 64
+2023-09-06 16:31:52.309 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:31:52 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-06 16:31:52.309 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:31:52 AM'.
+2023-09-06 16:31:52.310 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:31:52.311 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:31:52.311 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 2.9730 ms
+2023-09-06 16:31:52.311 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json 64 - 401 0 - 3.6738ms
+2023-09-06 16:33:35.226 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - -
+2023-09-06 16:33:35.227 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:33:35.227 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:33:35.228 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 0.5967 ms
+2023-09-06 16:33:35.228 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - - - 401 0 - 1.4235ms
+2023-09-06 16:33:41.353 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-06 16:33:41.355 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 2.3828ms
+2023-09-06 16:33:41.445 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-06 16:33:41.446 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.9778ms
+2023-09-06 16:33:41.698 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-06 16:33:41.707 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.6633ms
+2023-09-06 16:34:08.243 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-06 16:34:08.254 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 11.3374ms
+2023-09-06 16:34:08.358 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-06 16:34:08.358 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.4758ms
+2023-09-06 16:34:08.554 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-06 16:34:08.562 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.0893ms
+2023-09-06 16:34:18.646 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - -
+2023-09-06 16:34:18.649 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-09-06 16:34:18.664 +07:00 [INF] Route matched with {action = "GetLeaveTypes", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveTypes() on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-09-06 16:34:19.734 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."Id", "l"."DateCreated", "l"."DateModified", "l"."DefaultDays", "l"."Name"
+FROM "LeaveTypes" AS "l"
+2023-09-06 16:34:19.809 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LeaveManagement.Domain.Dto.LeaveTypesVM, LeaveManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-06 16:34:19.827 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web) in 1157.5367ms
+2023-09-06 16:34:19.827 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-09-06 16:34:19.828 +07:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 1180.6169 ms
+2023-09-06 16:34:19.834 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes - - - 200 - application/json;+charset=utf-8 1187.7279ms
+2023-09-06 16:34:28.137 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json -
+2023-09-06 16:34:28.140 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:34:28 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-06 16:34:28.140 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:34:28 AM'.
+2023-09-06 16:34:28.141 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-09-06 16:34:28.141 +07:00 [INF] Route matched with {action = "GetLeaveTypes", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveTypes() on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-09-06 16:34:28.209 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."Id", "l"."DateCreated", "l"."DateModified", "l"."DefaultDays", "l"."Name"
+FROM "LeaveTypes" AS "l"
+2023-09-06 16:34:28.211 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LeaveManagement.Domain.Dto.LeaveTypesVM, LeaveManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-06 16:34:28.211 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web) in 70.0793ms
+2023-09-06 16:34:28.211 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-09-06 16:34:28.211 +07:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 71.8038 ms
+2023-09-06 16:34:28.212 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json - - 200 - application/json;+charset=utf-8 74.6416ms
+2023-09-06 16:34:35.452 +07:00 [INF] Application is shutting down...
+2023-09-06 16:35:29.432 +07:00 [INF] User profile is available. Using 'C:\Users\Hengsomnang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-06 16:35:29.537 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-06 16:35:29.539 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-06 16:35:29.540 +07:00 [INF] Hosting environment: Development
+2023-09-06 16:35:29.541 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-06 16:35:31.097 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json -
+2023-09-06 16:35:31.150 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-06 16:35:31.304 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:35:31 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-06 16:35:31.315 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:35:31 AM'.
+2023-09-06 16:35:31.323 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:35:31.329 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:35:31.333 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 185.3347 ms
+2023-09-06 16:35:31.343 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json - - 401 0 - 248.5536ms
+2023-09-06 16:38:12.969 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json -
+2023-09-06 16:38:12.976 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:38:12 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-06 16:38:12.980 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:38:12 AM'.
+2023-09-06 16:38:12.983 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:38:12.985 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:38:12.987 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 15.3279 ms
+2023-09-06 16:38:12.992 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json - - 401 0 - 23.7949ms
+2023-09-06 16:38:17.811 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json -
+2023-09-06 16:38:17.829 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:38:17 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-06 16:38:17.835 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:38:17 AM'.
+2023-09-06 16:38:17.838 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:38:17.841 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:38:17.845 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 17.0932 ms
+2023-09-06 16:38:17.850 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json - - 401 0 - 38.2028ms
+2023-09-06 16:38:27.207 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json -
+2023-09-06 16:38:27.209 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:38:27 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-06 16:38:27.213 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:17:13 AM', Current time: '9/6/2023 9:38:27 AM'.
+2023-09-06 16:38:27.214 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:38:27.216 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:38:27.217 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 7.8367 ms
+2023-09-06 16:38:27.218 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json - - 401 0 - 10.8587ms
+2023-09-06 16:38:53.353 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61
+2023-09-06 16:38:53.356 +07:00 [INF] CORS policy execution successful.
+2023-09-06 16:38:53.360 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-06 16:38:53.386 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(LeaveManagement.Domain.Model.Users.LoginDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-06 16:38:54.623 +07:00 [INF] Executed DbCommand (15ms) [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-09-06 16:38:54.856 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-06 16:38:54.876 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2023-09-06 16:38:54.916 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Dto.Users.AuthResponseDto'.
+2023-09-06 16:38:54.933 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web) in 1537.5026ms
+2023-09-06 16:38:54.935 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-06 16:38:54.936 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 1581.3927 ms
+2023-09-06 16:38:54.949 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61 - 200 - application/json;+charset=utf-8 1595.7722ms
+2023-09-06 16:39:07.396 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json -
+2023-09-06 16:39:07.398 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:38:54 AM', Current time: '9/6/2023 9:39:07 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-06 16:39:07.401 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:38:54 AM', Current time: '9/6/2023 9:39:07 AM'.
+2023-09-06 16:39:07.403 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:39:07.404 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:39:07.406 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 7.8665 ms
+2023-09-06 16:39:07.407 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json - - 401 0 - 11.3909ms
+2023-09-06 16:40:59.376 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json -
+2023-09-06 16:40:59.378 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:38:54 AM', Current time: '9/6/2023 9:40:59 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-06 16:40:59.382 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:38:54 AM', Current time: '9/6/2023 9:40:59 AM'.
+2023-09-06 16:40:59.383 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:40:59.384 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:40:59.385 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 7.6384 ms
+2023-09-06 16:40:59.387 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json - - 401 0 - 10.4538ms
+2023-09-06 16:46:37.694 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61
+2023-09-06 16:46:37.697 +07:00 [INF] CORS policy execution successful.
+2023-09-06 16:46:37.698 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-06 16:46:37.700 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(LeaveManagement.Domain.Model.Users.LoginDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-06 16:46:37.783 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-09-06 16:46:37.879 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-06 16:46:37.884 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2023-09-06 16:46:37.888 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Dto.Users.AuthResponseDto'.
+2023-09-06 16:46:37.890 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web) in 187.9256ms
+2023-09-06 16:46:37.893 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-06 16:46:37.895 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 198.6600 ms
+2023-09-06 16:46:37.898 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61 - 200 - application/json;+charset=utf-8 204.6658ms
+2023-09-06 16:53:43.669 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json -
+2023-09-06 16:53:43.671 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:46:37 AM', Current time: '9/6/2023 9:53:43 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-06 16:53:43.674 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:46:37 AM', Current time: '9/6/2023 9:53:43 AM'.
+2023-09-06 16:53:43.676 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:53:43.678 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:53:43.679 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 8.9239 ms
+2023-09-06 16:53:43.682 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json - - 401 0 - 12.7661ms
+2023-09-06 16:54:00.363 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json -
+2023-09-06 16:54:00.366 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-06 16:54:00.370 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2023-09-06 16:54:00.372 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:54:00.373 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:54:00.374 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 9.8069 ms
+2023-09-06 16:54:00.376 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json - - 401 0 - 13.8337ms
+2023-09-06 16:54:37.480 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json -
+2023-09-06 16:54:37.483 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:46:37 AM', Current time: '9/6/2023 9:54:37 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-06 16:54:37.486 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/6/2023 9:46:37 AM', Current time: '9/6/2023 9:54:37 AM'.
+2023-09-06 16:54:37.488 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-06 16:54:37.489 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-06 16:54:37.491 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 8.6334 ms
+2023-09-06 16:54:37.493 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json - - 401 0 - 12.1919ms
+2023-09-06 16:54:56.584 +07:00 [INF] Application is shutting down...

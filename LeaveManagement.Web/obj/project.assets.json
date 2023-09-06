@@ -1222,6 +1222,7 @@
         "dependencies": {
           "LeaveManagement.Domain": "1.0.0",
           "LeaveManagement.Persistence": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.10",
           "Serilog.AspNetCore": "7.0.0",
           "Serilog.Expressions": "3.4.1",
           "Serilog.Sinks.Seq": "5.2.2"
@@ -3134,11 +3135,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj",
+      "projectUniqueName": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj",
       "projectName": "LeaveManagement.Web",
-      "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj",
+      "projectPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj",
       "packagesPath": "C:\\Users\\Hengsomnang\\.nuget\\packages\\",
-      "outputPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\obj\\",
+      "outputPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hengsomnang\\AppData\\Roaming\\NuGet\\NuGet.Config"
