@@ -762,6 +762,7 @@
         "dependencies": {
           "LeaveManagement.Domain": "1.0.0",
           "LeaveManagement.Persistence": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.10",
           "Serilog.AspNetCore": "7.0.0",
           "Serilog.Expressions": "3.4.1",
           "Serilog.Sinks.Seq": "5.2.2"
@@ -772,6 +773,7 @@
       },
       "LeaveManagement.Domain/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.10",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.10",
           "Serilog.AspNetCore": "7.0.0",
           "Serilog.Expressions": "3.4.1",
@@ -785,6 +787,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "LeaveManagement.Domain": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.10",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.10",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.4",

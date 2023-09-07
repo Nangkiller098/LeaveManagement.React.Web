@@ -40,23 +40,23 @@ builder.Services.AddScoped<ILeaveTypesRepository, LeaveTypesRepository>();
 builder.Services.AddScoped<IAuthManager,AuthManager>();
 
 //add JWT Authentication 
-builder.Services.AddAuthentication(opt=>{
-    opt.DefaultAuthenticateScheme=JwtBearerDefaults.AuthenticationScheme; //"Bearer"
-    opt.DefaultChallengeScheme=JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(opt=>{
-    opt.TokenValidationParameters= new TokenValidationParameters
+builder.Services.AddAuthentication(options => {
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme; // "Bearer"
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options => {
+    options.TokenValidationParameters = new TokenValidationParameters
     {
-        ValidateIssuerSigningKey=true, //for prevent trying to scope token if they get the key they still can't use it
-        ValidateIssuer=true, //make sure came from our user
-        ValidateAudience=true, //came from user who recongine
-        ValidateLifetime=true, //no lifetime must expire
-        ClockSkew=TimeSpan.Zero,
-        ValidIssuer=builder.Configuration["JwtSettings:Issuer"],
-        ValidAudience=builder.Configuration["JwtSettings:Audience"],
-        IssuerSigningKey=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Key"])),
+        ValidateIssuerSigningKey = true,
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = false,
+        ClockSkew = TimeSpan.Zero,
+        ValidIssuer = builder.Configuration["JwtSettings:Issuer"],
+        ValidAudience = builder.Configuration["JwtSettings:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Key"]))
     };
 });
-
+builder.Services.AddAuthentication();
 //autoMapper
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 var app = builder.Build();

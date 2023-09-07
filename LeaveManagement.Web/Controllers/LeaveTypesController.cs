@@ -2,11 +2,15 @@ using AutoMapper;
 using LeaveManagement.Application.Contracts;
 using LeaveManagement.Domain.Dto;
 using LeaveManagement.Domain.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LeaveManagement.Web.Controllers
 {
-    public class LeaveTypesController : BaseApiController
+    [ApiController]
+    [Route("api/[controller]")]
+    [Authorize]
+    public class LeaveTypesController : ControllerBase
     {
         private readonly ILeaveTypesRepository _leaveTypesRepository;
         private readonly IMapper _mapper;

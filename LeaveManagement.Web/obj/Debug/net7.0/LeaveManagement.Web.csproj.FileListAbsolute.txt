@@ -8,6 +8,7 @@ D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Leave
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\AutoMapper.dll
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Humanizer.dll
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -22,6 +23,11 @@ D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Micro
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.OpenApi.dll
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Mono.TextTemplating.dll
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Npgsql.dll
@@ -45,6 +51,7 @@ D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Swash
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\System.CodeDom.dll
+D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
@@ -95,10 +102,3 @@ D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\obj\Debug\net7.0\refin
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\obj\Debug\net7.0\LeaveManagement.Web.pdb
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\obj\Debug\net7.0\LeaveManagement.Web.genruntimeconfig.cache
 D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\obj\Debug\net7.0\ref\LeaveManagement.Web.dll
-D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

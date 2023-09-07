@@ -1222,6 +1222,7 @@
         "dependencies": {
           "LeaveManagement.Domain": "1.0.0",
           "LeaveManagement.Persistence": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.10",
           "Serilog.AspNetCore": "7.0.0",
           "Serilog.Expressions": "3.4.1",
           "Serilog.Sinks.Seq": "5.2.2"
@@ -1237,6 +1238,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.10",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.10",
           "Serilog.AspNetCore": "7.0.0",
           "Serilog.Expressions": "3.4.1",
@@ -1255,6 +1257,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "LeaveManagement.Domain": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.10",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.10",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.4",
@@ -3129,7 +3132,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hengsomnang\\.nuget\\packages\\": {}
+    "C:\\Users\\ripdo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -3137,24 +3140,25 @@
       "projectUniqueName": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj",
       "projectName": "LeaveManagement.Web",
       "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj",
-      "packagesPath": "C:\\Users\\Hengsomnang\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\ripdo\\.nuget\\packages\\",
       "outputPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Hengsomnang\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ripdo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Application\\LeaveManagement.Application.csproj": {
-              "projectPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Application\\LeaveManagement.Application.csproj"
+            "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Application\\LeaveManagement.Application.csproj": {
+              "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Application\\LeaveManagement.Application.csproj"
             }
           }
         }
@@ -3231,7 +3235,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

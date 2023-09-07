@@ -13,6 +13,7 @@ namespace LeaveManagement.Web.Controllers
         {
             _authManager = authManager;         
         }
+
         //POST: api/Account/register
         [HttpPost]
         [Route("register")]
@@ -27,7 +28,8 @@ namespace LeaveManagement.Web.Controllers
                 foreach(var error in errors)    
                 {
                     ModelState.AddModelError(error.Code,error.Description);
-                }            
+                }  
+                return BadRequest(ModelState);        
             }
             return Ok(apiUserDto);
         }
@@ -39,12 +41,12 @@ namespace LeaveManagement.Web.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult> Login([FromBody] LoginDto loginDto)
         {
-            var isValidUser = await _authManager.Login(loginDto);
-            if(!isValidUser)
+            var authResponse = await _authManager.Login(loginDto);
+            if(authResponse==null)
             {
                 return Unauthorized();
             }
-            return Ok();
+            return Ok(authResponse);
         }
     }
 }
