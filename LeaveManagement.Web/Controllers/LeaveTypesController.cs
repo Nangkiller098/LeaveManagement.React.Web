@@ -60,6 +60,7 @@ namespace LeaveManagement.Web.Controllers
 
         }
         [HttpDelete]
+        [Authorize(Roles ="Administrator")]
         public async Task<IActionResult> DeleteLeaveType(string id)
         {
             var leaveType = await _leaveTypesRepository.GetAsync(id);

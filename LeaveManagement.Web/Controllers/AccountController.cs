@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LeaveManagement.Web.Controllers
 {
-
+    
     public class AccountController : BaseApiController
     {
         private readonly IAuthManager _authManager;

@@ -8,7 +8,8 @@ namespace LeaveManagement.Application.Contracts
     {
         Task<IEnumerable<IdentityError>>Registers(ApiUserDto userDto);
         Task<AuthResponseDto> Login(LoginDto loginDto);
-
+        Task<string> CreateRefreshToken();
+        Task<AuthResponseDto> VerifyRefreshToken(AuthResponseDto request);
     }
 
 }
