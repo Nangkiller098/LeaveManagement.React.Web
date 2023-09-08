@@ -35,7 +35,7 @@ builder.Services.AddCors(opt=>{
         .AllowAnyOrigin()
         .AllowAnyMethod());
     });
-builder.Host.UseSerilog((ctx,lc)=>lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
+builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<ILeaveTypesRepository, LeaveTypesRepository>();

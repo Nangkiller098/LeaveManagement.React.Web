@@ -1,0 +1,13 @@
+2023-09-08 16:34:24.255 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-08 16:34:24.342 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-08 16:34:24.344 +07:00 [INF] Hosting environment: Development
+2023-09-08 16:34:24.345 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-08 16:34:24.480 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-08 16:34:24.512 +07:00 [INF] HTTP POST /api/events/raw responded 404 in 33.6527 ms
+2023-09-08 16:34:26.541 +07:00 [INF] HTTP POST /api/events/raw responded 404 in 1.7197 ms
+2023-09-08 16:34:36.607 +07:00 [INF] HTTP POST /api/events/raw responded 404 in 54.6928 ms
+2023-09-08 16:34:41.541 +07:00 [INF] HTTP GET / responded 404 in 0.2648 ms
+2023-09-08 16:34:54.244 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 52.2563 ms
+2023-09-08 16:34:56.620 +07:00 [INF] HTTP POST /api/events/raw responded 404 in 0.1587 ms
+2023-09-08 16:35:15.272 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 2029.4026 ms
+2023-09-08 16:35:24.090 +07:00 [INF] Application is shutting down...
