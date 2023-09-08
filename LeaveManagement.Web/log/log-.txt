@@ -5192,3 +5192,470 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2023-09-07 09:53:41.919 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
 2023-09-07 09:53:41.924 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.3606ms
 2023-09-07 10:04:55.872 +07:00 [INF] Application is shutting down...
+2023-09-08 15:18:13.576 +07:00 [INF] User profile is available. Using 'C:\Users\Hengsomnang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-08 15:18:13.686 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-08 15:18:13.687 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-08 15:18:13.688 +07:00 [INF] Hosting environment: Development
+2023-09-08 15:18:13.688 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-08 15:18:14.938 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-08 15:18:15.191 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 257.6707ms
+2023-09-08 15:18:15.309 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-08 15:18:15.313 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 4.2598ms
+2023-09-08 15:18:15.477 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json -
+2023-09-08 15:18:15.489 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-08 15:18:15.856 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/7/2023 2:49:11 AM', Current time: '9/8/2023 8:18:15 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-09-08 15:18:15.872 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '9/7/2023 2:49:11 AM', Current time: '9/8/2023 8:18:15 AM'.
+2023-09-08 15:18:15.887 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-09-08 15:18:15.894 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-08 15:18:15.900 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 409.7856 ms
+2023-09-08 15:18:15.904 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json - - 401 0 - 426.4283ms
+2023-09-08 15:18:15.993 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-08 15:18:16.198 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 204.6111ms
+2023-09-08 15:18:28.745 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61
+2023-09-08 15:18:28.749 +07:00 [INF] CORS policy execution successful.
+2023-09-08 15:18:28.753 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-08 15:18:28.775 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(LeaveManagement.Domain.Model.Users.LoginDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-08 15:18:30.630 +07:00 [INF] Executed DbCommand (19ms) [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-09-08 15:18:30.827 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-08 15:18:30.840 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2023-09-08 15:18:30.861 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Dto.Users.AuthResponseDto'.
+2023-09-08 15:18:30.868 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web) in 2089.6904ms
+2023-09-08 15:18:30.868 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-08 15:18:30.868 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 2120.9647 ms
+2023-09-08 15:18:30.875 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61 - 200 - application/json;+charset=utf-8 2130.5018ms
+2023-09-08 15:18:47.866 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json -
+2023-09-08 15:18:47.933 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-09-08 15:18:47.938 +07:00 [INF] Route matched with {action = "GetLeaveTypes", controller = "LeaveTypes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLeaveTypes() on controller LeaveManagement.Web.Controllers.LeaveTypesController (LeaveManagement.Web).
+2023-09-08 15:18:48.011 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."Id", "l"."DateCreated", "l"."DateModified", "l"."DefaultDays", "l"."Name"
+FROM "LeaveTypes" AS "l"
+2023-09-08 15:18:48.047 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[LeaveManagement.Domain.Dto.LeaveTypesVM, LeaveManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-08 15:18:48.059 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web) in 120.8457ms
+2023-09-08 15:18:48.060 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.LeaveTypesController.GetLeaveTypes (LeaveManagement.Web)'
+2023-09-08 15:18:48.060 +07:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 193.2113 ms
+2023-09-08 15:18:48.060 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/LeaveTypes application/json - - 200 - application/json;+charset=utf-8 194.2781ms
+2023-09-08 15:19:40.990 +07:00 [INF] Application is shutting down...
+2023-09-08 15:37:22.784 +07:00 [INF] User profile is available. Using 'C:\Users\Hengsomnang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-08 15:37:22.890 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-08 15:37:22.892 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-08 15:37:22.892 +07:00 [INF] Hosting environment: Development
+2023-09-08 15:37:22.892 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-08 15:37:23.177 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-08 15:37:23.341 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 167.2585ms
+2023-09-08 15:37:23.447 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-08 15:37:23.451 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 3.8067ms
+2023-09-08 15:37:23.723 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-08 15:37:23.845 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 121.7459ms
+2023-09-08 15:37:35.885 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61
+2023-09-08 15:37:35.895 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-08 15:37:35.898 +07:00 [INF] CORS policy execution successful.
+2023-09-08 15:37:36.638 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-08 15:37:36.663 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(LeaveManagement.Domain.Model.Users.LoginDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-08 15:37:37.912 +07:00 [INF] Executed DbCommand (15ms) [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-09-08 15:37:38.155 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-08 15:37:38.171 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2023-09-08 15:37:38.451 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Dto.Users.AuthResponseDto'.
+2023-09-08 15:37:38.458 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web) in 1791.1769ms
+2023-09-08 15:37:38.459 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-08 15:37:38.462 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 2569.8069 ms
+2023-09-08 15:37:38.476 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61 - 200 - application/json;+charset=utf-8 2588.6126ms
+2023-09-08 15:38:42.339 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-08 15:38:42.353 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 13.9891ms
+2023-09-08 15:38:42.449 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-08 15:38:42.450 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.8105ms
+2023-09-08 15:38:42.699 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-08 15:38:42.705 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.8868ms
+2023-09-08 15:41:39.840 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-08 15:41:39.854 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 14.5173ms
+2023-09-08 15:41:39.950 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-08 15:41:39.950 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.7967ms
+2023-09-08 15:41:40.231 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-08 15:41:40.241 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.8253ms
+2023-09-08 15:41:49.753 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61
+2023-09-08 15:41:49.755 +07:00 [INF] CORS policy execution successful.
+2023-09-08 15:41:49.756 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-08 15:41:49.763 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(LeaveManagement.Domain.Model.Users.LoginDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-08 15:41:49.840 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-09-08 15:41:49.937 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-08 15:41:49.938 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2023-09-08 15:41:49.940 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Dto.Users.AuthResponseDto'.
+2023-09-08 15:41:49.941 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web) in 177.6611ms
+2023-09-08 15:41:49.941 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-08 15:41:49.941 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 187.7455 ms
+2023-09-08 15:41:49.942 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61 - 200 - application/json;+charset=utf-8 188.8860ms
+2023-09-08 15:42:31.893 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-08 15:42:31.903 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 9.9316ms
+2023-09-08 15:42:31.976 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-08 15:42:31.976 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3566ms
+2023-09-08 15:42:32.306 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-08 15:42:32.315 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.4912ms
+2023-09-08 15:42:42.055 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-08 15:42:42.066 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 11.5445ms
+2023-09-08 15:42:42.148 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-08 15:42:42.148 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.5900ms
+2023-09-08 15:42:42.338 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-08 15:42:42.344 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.7994ms
+2023-09-08 15:43:11.808 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-08 15:43:11.821 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 12.3049ms
+2023-09-08 15:43:11.841 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-08 15:43:11.846 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 5.4923ms
+2023-09-08 15:43:11.932 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-08 15:43:11.933 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.5789ms
+2023-09-08 15:43:12.118 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-08 15:43:12.122 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.4855ms
+2023-09-08 15:43:39.059 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-08 15:43:39.072 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 13.5683ms
+2023-09-08 15:43:39.086 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-08 15:43:39.090 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 3.5055ms
+2023-09-08 15:43:39.172 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-08 15:43:39.173 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3497ms
+2023-09-08 15:43:39.337 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-08 15:43:39.341 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.5814ms
+2023-09-08 15:44:34.780 +07:00 [INF] User profile is available. Using 'C:\Users\Hengsomnang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-08 15:44:34.881 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-08 15:44:34.883 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-08 15:44:34.883 +07:00 [INF] Hosting environment: Development
+2023-09-08 15:44:34.883 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-08 15:44:34.962 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-08 15:44:35.114 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 154.6223ms
+2023-09-08 15:44:35.182 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-08 15:44:35.186 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 3.7383ms
+2023-09-08 15:44:35.404 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-08 15:44:35.535 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 131.5383ms
+2023-09-08 15:44:43.171 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61
+2023-09-08 15:44:43.181 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-08 15:44:43.183 +07:00 [INF] CORS policy execution successful.
+2023-09-08 15:44:43.217 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-08 15:44:43.244 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(LeaveManagement.Domain.Model.Users.LoginDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-08 15:44:44.514 +07:00 [INF] Executed DbCommand (21ms) [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-09-08 15:44:44.750 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-08 15:44:44.768 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2023-09-08 15:44:44.931 +07:00 [INF] Executed DbCommand (51ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 20), @__p_2='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."LoginProvider", "a"."Name", "a"."Value"
+FROM "AspNetUserTokens" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."LoginProvider" = @__p_1 AND "a"."Name" = @__p_2
+LIMIT 1
+2023-09-08 15:44:44.942 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-08 15:44:45.051 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@p16='?' (Size = 36), @p0='?' (DbType = Int32), @p1='?' (Size = 36), @p17='?' (Size = 36), @p2='?' (Size = 16), @p3='?' (DbType = Boolean), @p4='?' (Size = 4), @p5='?' (Size = 4), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 16), @p9='?' (Size = 16), @p10='?' (Size = 84), @p11='?' (Size = 9), @p12='?' (DbType = Boolean), @p13='?' (Size = 32), @p14='?' (DbType = Boolean), @p15='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FristName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "SecurityStamp" = @p13, "TwoFactorEnabled" = @p14, "UserName" = @p15
+WHERE "Id" = @p16 AND "ConcurrencyStamp" = @p17
+RETURNING 1;
+2023-09-08 15:44:45.075 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web) in 1826.5036ms
+2023-09-08 15:44:45.077 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-08 15:44:45.081 +07:00 [ERR] HTTP POST /api/Account/login responded 500 in 1902.4341 ms
+System.NotSupportedException: No IUserTwoFactorTokenProvider<TUser> named 'LeaveManagementReact' is registered.
+   at Microsoft.AspNetCore.Identity.UserManager`1.GenerateUserTokenAsync(TUser user, String tokenProvider, String purpose)
+   at LeaveManagement.Application.Repositories.AuthManager.CreateRefreshToken() in D:\Projects\LeaveManagement.React.Web\LeaveManagement.Application\Repositories\AuthManager.cs:line 93
+   at LeaveManagement.Application.Repositories.AuthManager.Login(LoginDto loginDto) in D:\Projects\LeaveManagement.React.Web\LeaveManagement.Application\Repositories\AuthManager.cs:line 45
+   at LeaveManagement.Web.Controllers.AccountController.Login(LoginDto loginDto) in D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\Controllers\AccountController.cs:line 44
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-09-08 15:44:45.111 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: No IUserTwoFactorTokenProvider<TUser> named 'LeaveManagementReact' is registered.
+   at Microsoft.AspNetCore.Identity.UserManager`1.GenerateUserTokenAsync(TUser user, String tokenProvider, String purpose)
+   at LeaveManagement.Application.Repositories.AuthManager.CreateRefreshToken() in D:\Projects\LeaveManagement.React.Web\LeaveManagement.Application\Repositories\AuthManager.cs:line 93
+   at LeaveManagement.Application.Repositories.AuthManager.Login(LoginDto loginDto) in D:\Projects\LeaveManagement.React.Web\LeaveManagement.Application\Repositories\AuthManager.cs:line 45
+   at LeaveManagement.Web.Controllers.AccountController.Login(LoginDto loginDto) in D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\Controllers\AccountController.cs:line 44
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-09-08 15:44:45.128 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 61 - 500 - text/plain;+charset=utf-8 1956.7778ms
+2023-09-08 15:45:16.514 +07:00 [INF] Application is shutting down...
+2023-09-08 15:46:40.850 +07:00 [INF] User profile is available. Using 'C:\Users\Hengsomnang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-08 15:46:40.951 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-08 15:46:40.954 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-08 15:46:40.955 +07:00 [INF] Hosting environment: Development
+2023-09-08 15:46:40.956 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-08 15:46:50.769 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 64
+2023-09-08 15:46:50.819 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-08 15:46:50.852 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-08 15:46:50.883 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(LeaveManagement.Domain.Model.Users.LoginDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-08 15:46:52.164 +07:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-09-08 15:46:52.441 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-08 15:46:52.488 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2023-09-08 15:46:52.623 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 20), @__p_2='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."LoginProvider", "a"."Name", "a"."Value"
+FROM "AspNetUserTokens" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."LoginProvider" = @__p_1 AND "a"."Name" = @__p_2
+LIMIT 1
+2023-09-08 15:46:52.637 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-08 15:46:52.750 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@p16='?' (Size = 36), @p0='?' (DbType = Int32), @p1='?' (Size = 36), @p17='?' (Size = 36), @p2='?' (Size = 16), @p3='?' (DbType = Boolean), @p4='?' (Size = 4), @p5='?' (Size = 4), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 16), @p9='?' (Size = 16), @p10='?' (Size = 84), @p11='?' (Size = 9), @p12='?' (DbType = Boolean), @p13='?' (Size = 32), @p14='?' (DbType = Boolean), @p15='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FristName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "SecurityStamp" = @p13, "TwoFactorEnabled" = @p14, "UserName" = @p15
+WHERE "Id" = @p16 AND "ConcurrencyStamp" = @p17
+RETURNING 1;
+2023-09-08 15:46:52.807 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web) in 1918.3697ms
+2023-09-08 15:46:52.810 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-08 15:46:52.814 +07:00 [ERR] HTTP POST /api/Account/login responded 500 in 1997.7103 ms
+System.NotSupportedException: No IUserTwoFactorTokenProvider<TUser> named 'LeaveManagementReact' is registered.
+   at Microsoft.AspNetCore.Identity.UserManager`1.GenerateUserTokenAsync(TUser user, String tokenProvider, String purpose)
+   at LeaveManagement.Application.Repositories.AuthManager.CreateRefreshToken() in D:\Projects\LeaveManagement.React.Web\LeaveManagement.Application\Repositories\AuthManager.cs:line 93
+   at LeaveManagement.Application.Repositories.AuthManager.Login(LoginDto loginDto) in D:\Projects\LeaveManagement.React.Web\LeaveManagement.Application\Repositories\AuthManager.cs:line 45
+   at LeaveManagement.Web.Controllers.AccountController.Login(LoginDto loginDto) in D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\Controllers\AccountController.cs:line 44
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-09-08 15:46:52.853 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: No IUserTwoFactorTokenProvider<TUser> named 'LeaveManagementReact' is registered.
+   at Microsoft.AspNetCore.Identity.UserManager`1.GenerateUserTokenAsync(TUser user, String tokenProvider, String purpose)
+   at LeaveManagement.Application.Repositories.AuthManager.CreateRefreshToken() in D:\Projects\LeaveManagement.React.Web\LeaveManagement.Application\Repositories\AuthManager.cs:line 93
+   at LeaveManagement.Application.Repositories.AuthManager.Login(LoginDto loginDto) in D:\Projects\LeaveManagement.React.Web\LeaveManagement.Application\Repositories\AuthManager.cs:line 45
+   at LeaveManagement.Web.Controllers.AccountController.Login(LoginDto loginDto) in D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web\Controllers\AccountController.cs:line 44
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-09-08 15:46:52.891 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 64 - 500 - text/plain;+charset=utf-8 2122.6186ms
+2023-09-08 15:49:30.008 +07:00 [INF] Application is shutting down...
+2023-09-08 15:50:20.057 +07:00 [INF] User profile is available. Using 'C:\Users\Hengsomnang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-08 15:50:20.139 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-08 15:50:20.140 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-08 15:50:20.141 +07:00 [INF] Hosting environment: Development
+2023-09-08 15:50:20.141 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-08 15:50:20.352 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-08 15:50:20.484 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 131.6891ms
+2023-09-08 15:50:20.595 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-08 15:50:20.598 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 2.8219ms
+2023-09-08 15:50:20.826 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-08 15:50:20.925 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 99.2492ms
+2023-09-08 15:50:35.853 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-09-08 15:50:35.870 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 16.7532ms
+2023-09-08 15:50:35.931 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-09-08 15:50:35.933 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 1.5564ms
+2023-09-08 15:50:36.144 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-09-08 15:50:36.156 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.8157ms
+2023-09-08 15:50:49.903 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 64
+2023-09-08 15:50:49.910 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-08 15:50:49.941 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-08 15:50:49.962 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(LeaveManagement.Domain.Model.Users.LoginDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-08 15:50:51.078 +07:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-09-08 15:50:51.302 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-08 15:50:51.321 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2023-09-08 15:50:51.435 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 20), @__p_2='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."LoginProvider", "a"."Name", "a"."Value"
+FROM "AspNetUserTokens" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."LoginProvider" = @__p_1 AND "a"."Name" = @__p_2
+LIMIT 1
+2023-09-08 15:50:51.445 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-08 15:50:51.550 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@p16='?' (Size = 36), @p0='?' (DbType = Int32), @p1='?' (Size = 36), @p17='?' (Size = 36), @p2='?' (Size = 16), @p3='?' (DbType = Boolean), @p4='?' (Size = 4), @p5='?' (Size = 4), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 16), @p9='?' (Size = 16), @p10='?' (Size = 84), @p11='?' (Size = 9), @p12='?' (DbType = Boolean), @p13='?' (Size = 32), @p14='?' (DbType = Boolean), @p15='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FristName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "SecurityStamp" = @p13, "TwoFactorEnabled" = @p14, "UserName" = @p15
+WHERE "Id" = @p16 AND "ConcurrencyStamp" = @p17
+RETURNING 1;
+2023-09-08 15:50:51.625 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 20), @__p_2='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."LoginProvider", "a"."Name", "a"."Value"
+FROM "AspNetUserTokens" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."LoginProvider" = @__p_1 AND "a"."Name" = @__p_2
+LIMIT 1
+2023-09-08 15:50:51.649 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-08 15:50:51.677 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 20), @p1='?' (Size = 12), @p2='?' (Size = 36), @p3='?' (Size = 240)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUserTokens" ("LoginProvider", "Name", "UserId", "Value")
+VALUES (@p0, @p1, @p2, @p3);
+2023-09-08 15:50:51.678 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@p16='?' (Size = 36), @p0='?' (DbType = Int32), @p1='?' (Size = 36), @p17='?' (Size = 36), @p2='?' (Size = 16), @p3='?' (DbType = Boolean), @p4='?' (Size = 4), @p5='?' (Size = 4), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 16), @p9='?' (Size = 16), @p10='?' (Size = 84), @p11='?' (Size = 9), @p12='?' (DbType = Boolean), @p13='?' (Size = 32), @p14='?' (DbType = Boolean), @p15='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FristName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "SecurityStamp" = @p13, "TwoFactorEnabled" = @p14, "UserName" = @p15
+WHERE "Id" = @p16 AND "ConcurrencyStamp" = @p17
+RETURNING 1;
+2023-09-08 15:50:51.696 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Dto.Users.AuthResponseDto'.
+2023-09-08 15:50:51.705 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web) in 1738.1334ms
+2023-09-08 15:50:51.706 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-08 15:50:51.708 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 1799.1258 ms
+2023-09-08 15:50:51.715 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 64 - 200 - application/json;+charset=utf-8 1811.4522ms
+2023-09-08 15:51:00.868 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 64
+2023-09-08 15:51:00.873 +07:00 [INF] Executing endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-08 15:51:00.874 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(LeaveManagement.Domain.Model.Users.LoginDto) on controller LeaveManagement.Web.Controllers.AccountController (LeaveManagement.Web).
+2023-09-08 15:51:00.940 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-09-08 15:51:01.037 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-08 15:51:01.038 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2023-09-08 15:51:01.040 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 20), @__p_2='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."LoginProvider", "a"."Name", "a"."Value"
+FROM "AspNetUserTokens" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."LoginProvider" = @__p_1 AND "a"."Name" = @__p_2
+LIMIT 1
+2023-09-08 15:51:01.044 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-08 15:51:01.050 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 20), @p1='?' (Size = 12), @p2='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "AspNetUserTokens"
+WHERE "LoginProvider" = @p0 AND "Name" = @p1 AND "UserId" = @p2
+RETURNING 1;
+2023-09-08 15:51:01.050 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@p16='?' (Size = 36), @p0='?' (DbType = Int32), @p1='?' (Size = 36), @p17='?' (Size = 36), @p2='?' (Size = 16), @p3='?' (DbType = Boolean), @p4='?' (Size = 4), @p5='?' (Size = 4), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 16), @p9='?' (Size = 16), @p10='?' (Size = 84), @p11='?' (Size = 9), @p12='?' (DbType = Boolean), @p13='?' (Size = 32), @p14='?' (DbType = Boolean), @p15='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FristName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "SecurityStamp" = @p13, "TwoFactorEnabled" = @p14, "UserName" = @p15
+WHERE "Id" = @p16 AND "ConcurrencyStamp" = @p17
+RETURNING 1;
+2023-09-08 15:51:01.111 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 36), @__p_1='?' (Size = 20), @__p_2='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."UserId", "a"."LoginProvider", "a"."Name", "a"."Value"
+FROM "AspNetUserTokens" AS "a"
+WHERE "a"."UserId" = @__p_0 AND "a"."LoginProvider" = @__p_1 AND "a"."Name" = @__p_2
+LIMIT 1
+2023-09-08 15:51:01.112 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."FristName", "a"."LastName", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-08 15:51:01.113 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 20), @p1='?' (Size = 12), @p2='?' (Size = 36), @p3='?' (Size = 240)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUserTokens" ("LoginProvider", "Name", "UserId", "Value")
+VALUES (@p0, @p1, @p2, @p3);
+2023-09-08 15:51:01.114 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@p16='?' (Size = 36), @p0='?' (DbType = Int32), @p1='?' (Size = 36), @p17='?' (Size = 36), @p2='?' (Size = 16), @p3='?' (DbType = Boolean), @p4='?' (Size = 4), @p5='?' (Size = 4), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 16), @p9='?' (Size = 16), @p10='?' (Size = 84), @p11='?' (Size = 9), @p12='?' (DbType = Boolean), @p13='?' (Size = 32), @p14='?' (DbType = Boolean), @p15='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FristName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "SecurityStamp" = @p13, "TwoFactorEnabled" = @p14, "UserName" = @p15
+WHERE "Id" = @p16 AND "ConcurrencyStamp" = @p17
+RETURNING 1;
+2023-09-08 15:51:01.119 +07:00 [INF] Executing OkObjectResult, writing value of type 'LeaveManagement.Domain.Dto.Users.AuthResponseDto'.
+2023-09-08 15:51:01.119 +07:00 [INF] Executed action LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web) in 245.4008ms
+2023-09-08 15:51:01.119 +07:00 [INF] Executed endpoint 'LeaveManagement.Web.Controllers.AccountController.Login (LeaveManagement.Web)'
+2023-09-08 15:51:01.119 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 248.2509 ms
+2023-09-08 15:51:01.120 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Account/login application/json 64 - 200 - application/json;+charset=utf-8 251.8569ms
+2023-09-08 16:01:28.994 +07:00 [INF] Application is shutting down...

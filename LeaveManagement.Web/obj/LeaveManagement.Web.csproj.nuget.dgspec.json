@@ -29,8 +29,8 @@
               "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj": {
                 "projectPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Domain\\LeaveManagement.Domain.csproj"
               },
-              "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj": {
-                "projectPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj"
+              "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj": {
+                "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj"
               }
             }
           }
@@ -153,14 +153,14 @@
         }
       }
     },
-    "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj": {
+    "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj",
+        "projectUniqueName": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj",
         "projectName": "LeaveManagement.Persistence",
-        "projectPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj",
+        "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\LeaveManagement.Persistence.csproj",
         "packagesPath": "C:\\Users\\Hengsomnang\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\obj\\",
+        "outputPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hengsomnang\\AppData\\Roaming\\NuGet\\NuGet.Config"

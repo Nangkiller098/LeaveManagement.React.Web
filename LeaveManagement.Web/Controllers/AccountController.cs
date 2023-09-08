@@ -1,4 +1,5 @@
 using LeaveManagement.Application.Contracts;
+using LeaveManagement.Domain.Dto.Users;
 using LeaveManagement.Domain.Model.Users;
 using Microsoft.AspNetCore.Mvc;
 
@@ -47,5 +48,21 @@ namespace LeaveManagement.Web.Controllers
             }
             return Ok(authResponseDto);
         }
+        //Post: api/Account/refreshToken
+        [HttpPost]
+        [Route("refreshToken")]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult> RefreshToken([FromBody] AuthResponseDto request)
+        {
+            var authResponseDto = await _authManager.VerifyRefreshToken(request);
+            if(authResponseDto == null)
+            {
+                return Unauthorized();
+            }
+            return Ok(authResponseDto);
+        }
+
     }
 }

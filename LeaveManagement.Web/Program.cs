@@ -24,6 +24,8 @@ builder.Services.AddDbContext<ReactDbContext>(opt =>
     opt.UseSqlite(builder.Configuration.GetConnectionString("SqliteConnection")));
 builder.Services.AddIdentityCore<ApiUser>()
 .AddRoles<IdentityRole>()
+.AddTokenProvider<DataProtectorTokenProvider<ApiUser>>("LeaveManagementReact")
+.AddDefaultTokenProviders()
 .AddEntityFrameworkStores<ReactDbContext>();
 
 //config CORS
