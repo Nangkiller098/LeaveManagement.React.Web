@@ -3135,11 +3135,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj",
+      "projectUniqueName": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj",
       "projectName": "LeaveManagement.Web",
-      "projectPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj",
+      "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\LeaveManagement.Web.csproj",
       "packagesPath": "C:\\Users\\Hengsomnang\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\obj\\",
+      "outputPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hengsomnang\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3154,8 +3154,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Application\\LeaveManagement.Application.csproj": {
-              "projectPath": "D:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Application\\LeaveManagement.Application.csproj"
+            "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Application\\LeaveManagement.Application.csproj": {
+              "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Application\\LeaveManagement.Application.csproj"
             }
           }
         }
