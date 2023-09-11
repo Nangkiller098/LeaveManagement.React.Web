@@ -1,5 +1,6 @@
 using AutoMapper;
 using LeaveManagement.Application.Contracts;
+using LeaveManagement.Application.Exceptions;
 using LeaveManagement.Domain.Dto;
 using LeaveManagement.Domain.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -7,13 +8,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LeaveManagement.Web.Controllers
 {
-    [Authorize]
+    [AllowAnonymous]
     public class LeaveTypesController : BaseApiController
     {
         private readonly ILeaveTypesRepository _leaveTypesRepository;
         private readonly IMapper _mapper;
-        public LeaveTypesController(ILeaveTypesRepository leaveTypesRepository,IMapper mapper)
+        private readonly ILogger _logger;
+        public LeaveTypesController(ILeaveTypesRepository leaveTypesRepository,IMapper mapper,ILogger<LeaveTypesController> logger)
         {
+            _logger = logger;
             _mapper = mapper;
             _leaveTypesRepository = leaveTypesRepository;
             
@@ -21,14 +24,21 @@ namespace LeaveManagement.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> GetLeaveTypes()
         {
-            var leaveTypes = _mapper.Map<List<LeaveTypesVM>>(await _leaveTypesRepository.GetAllAsync()); 
-            return Ok(leaveTypes);
+            var leaveTypes = await _leaveTypesRepository.GetAllAsync();
+            var record = _mapper.Map<List<LeaveTypesVM>>(leaveTypes); 
+            return Ok(record);
+        }
+        [HttpGet("GetAll")]
+        public async Task<ActionResult<PageResult<LeaveTypesVM>>> GetLeaveTypes([FromQuery] QueryParameters queryParameters)
+        {
+            var leavetypes = await _leaveTypesRepository.GetAllAsync<LeaveTypesVM>(queryParameters);
+            return Ok(leavetypes);
         }
         [HttpPost]
         public async Task<IActionResult> Create(LeaveTypesVM leaveTypesVM)
         {
            var leavetype = _mapper.Map<LeaveTypes>(leaveTypesVM);
-           await _leaveTypesRepository.AddAsync(leavetype);
+            await _leaveTypesRepository.AddAsync(leavetype);
             return Ok(leavetype);
         }
         [HttpGet("{id}")]
@@ -37,7 +47,7 @@ namespace LeaveManagement.Web.Controllers
             var leavetype= await _leaveTypesRepository.GetAsync(id);
             if (leavetype == null)
             {
-                return NotFound();
+                throw new NotFoundException(nameof(GetLeaveType),id);
             }
             var leaveTypeVM =_mapper.Map<LeaveTypesVM>(leavetype);
             return Ok(leaveTypeVM);
@@ -47,12 +57,12 @@ namespace LeaveManagement.Web.Controllers
         {  
             if(id != leaveTypesVM.Id)
             {
-                return NotFound();
+                return BadRequest("Invalid Record Id");
             }
             var leaveType = await _leaveTypesRepository.GetAsync(id);
             if(leaveType == null)
             {
-                return NotFound();
+                throw new NotFoundException(nameof(PutLeaveType),id);
             }
             _mapper.Map(leaveTypesVM,leaveType);
             await _leaveTypesRepository.UpdateAsync(leaveType);
@@ -66,7 +76,7 @@ namespace LeaveManagement.Web.Controllers
             var leaveType = await _leaveTypesRepository.GetAsync(id);
             if(leaveType==null)
             {
-                return NotFound();
+                throw new NotFoundException(nameof(DeleteLeaveType),id);
             }
             await _leaveTypesRepository.DeleteAsync(id);
             return Ok();

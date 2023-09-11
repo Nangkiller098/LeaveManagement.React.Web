@@ -1,6 +1,7 @@
 using LeaveManagement.Application.Contracts;
 using LeaveManagement.Domain.Dto.Users;
 using LeaveManagement.Domain.Model.Users;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LeaveManagement.Web.Controllers
@@ -9,9 +10,11 @@ namespace LeaveManagement.Web.Controllers
     public class AccountController : BaseApiController
     {
         private readonly IAuthManager _authManager;
+        private readonly ILogger<AccountController> _logger;
 
-        public AccountController(IAuthManager authManager)
+        public AccountController(IAuthManager authManager,ILogger<AccountController> logger)
         {
+            _logger      = logger;
             _authManager = authManager;         
         }
         //POST: api/Account/register
@@ -22,16 +25,26 @@ namespace LeaveManagement.Web.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult> Register([FromBody] ApiUserDto apiUserDto)
         {
-            var errors = await _authManager.Registers(apiUserDto);
-            if(errors.Any())
+            _logger.LogInformation($"Registration Attempt for",apiUserDto.Email);
+            try
             {
-                foreach(var error in errors)    
+                var errors = await _authManager.Registers(apiUserDto);
+                if(errors.Any())
                 {
-                    ModelState.AddModelError(error.Code,error.Description);
-                }            
-                return BadRequest(ModelState);
+                    foreach(var error in errors)    
+                    {
+                        ModelState.AddModelError(error.Code,error.Description);
+                    }            
+                    return BadRequest(ModelState);
+                }
+                return Ok(apiUserDto); 
+                }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex,$"Something Went Wrong in the {nameof(Register)} - User registration attemtp for {apiUserDto.Email}");
+                return Problem($"Something went Wrong in the {nameof(Register)}. Please Contact Support.",statusCode :500);
             }
-            return Ok(apiUserDto);
+
         }
         //Post: api/Account/login
         [HttpPost]
@@ -41,12 +54,14 @@ namespace LeaveManagement.Web.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult> Login([FromBody] LoginDto loginDto)
         {
-            var authResponseDto = await _authManager.Login(loginDto);
-            if(authResponseDto == null)
-            {
-                return Unauthorized();
-            }
-            return Ok(authResponseDto);
+
+                var authResponseDto = await _authManager.Login(loginDto);
+                if(authResponseDto == null)
+                {
+                    return Unauthorized();
+                }
+                return Ok(authResponseDto);
+
         }
         //Post: api/Account/refreshToken
         [HttpPost]

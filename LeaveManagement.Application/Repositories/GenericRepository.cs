@@ -1,4 +1,7 @@
+using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using LeaveManagement.Application.Contracts;
+using LeaveManagement.Domain.Dto;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
@@ -7,8 +10,11 @@ namespace LeaveManagement.Application.Repositories
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly ReactDbContext _context;
-        public GenericRepository(ReactDbContext context)
+        private readonly IMapper _mapper;
+
+        public GenericRepository(ReactDbContext context,IMapper mapper)
         {
+            _mapper = mapper;
             _context = context;
             
         }
@@ -47,6 +53,23 @@ namespace LeaveManagement.Application.Repositories
         public async Task<List<T>> GetAllAsync()
         {
             return await _context.Set<T>().ToListAsync();
+        }
+
+        public async Task<PageResult<TResult>> GetAllAsync<TResult>(QueryParameters queryParameters)
+        {
+            var totalSize = await _context.Set<T>().CountAsync();
+            var items = await _context.Set<T>()
+            .Skip(queryParameters.StartIndex)
+            .Take(queryParameters.PageSize)
+            .ProjectTo<TResult>(_mapper.ConfigurationProvider)
+            .ToListAsync();
+            return new PageResult<TResult>
+            {
+                Items = items,
+                PageNumber = queryParameters.StartIndex,
+                RecordNumber = queryParameters.PageSize,
+                TotalCount = totalSize
+            };
         }
 
         public async Task<T> GetAsync(string id)

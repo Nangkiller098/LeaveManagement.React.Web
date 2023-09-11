@@ -1,0 +1,29 @@
+2023-09-09 08:14:50.621 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-09 08:14:50.645 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-09 08:14:50.646 +07:00 [INF] Hosting environment: Development
+2023-09-09 08:14:50.647 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-09 08:14:50.791 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-09 08:14:50.946 +07:00 [INF] HTTP POST /api/events/raw responded 404 in 157.1561 ms
+2023-09-09 08:14:52.964 +07:00 [INF] HTTP POST /api/events/raw responded 404 in 0.9969 ms
+2023-09-09 08:14:59.393 +07:00 [INF] HTTP GET /api/LeaveTypes responded 401 in 109.1884 ms
+2023-09-09 08:15:02.972 +07:00 [INF] HTTP POST /api/events/raw responded 404 in 0.0653 ms
+2023-09-09 08:15:04.654 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 1667.2502 ms
+2023-09-09 08:15:18.079 +07:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 70.8501 ms
+2023-09-09 08:15:22.974 +07:00 [INF] HTTP POST /api/events/raw responded 404 in 0.0576 ms
+2023-09-09 08:15:25.655 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 122.6386 ms
+2023-09-09 08:15:28.342 +07:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 3.1825 ms
+2023-09-09 08:15:56.913 +07:00 [INF] Application is shutting down...
+2023-09-09 08:25:08.033 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-09 08:25:08.058 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-09 08:25:08.059 +07:00 [INF] Hosting environment: Development
+2023-09-09 08:25:08.060 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-09 08:25:08.164 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-09 08:25:08.187 +07:00 [INF] HTTP POST /api/events/raw responded 404 in 24.0601 ms
+2023-09-09 08:25:10.214 +07:00 [INF] HTTP POST /api/events/raw responded 404 in 0.9013 ms
+2023-09-09 08:25:20.225 +07:00 [INF] HTTP POST /api/events/raw responded 404 in 1.3310 ms
+2023-09-09 08:25:40.239 +07:00 [INF] HTTP POST /api/events/raw responded 404 in 0.0648 ms
+2023-09-09 08:26:20.257 +07:00 [INF] HTTP POST /api/events/raw responded 404 in 0.0739 ms
+2023-09-09 08:27:40.276 +07:00 [INF] HTTP POST /api/events/raw responded 404 in 0.0839 ms
+2023-09-09 08:30:20.280 +07:00 [INF] HTTP POST /api/events/raw responded 404 in 0.0849 ms
+2023-09-09 08:31:42.899 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 1127.5733 ms
+2023-09-09 08:32:02.588 +07:00 [INF] Application is shutting down...
