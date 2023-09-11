@@ -29,7 +29,7 @@ namespace LeaveManagement.Web.Controllers
             return Ok(record);
         }
         [HttpGet("GetAll")]
-        public async Task<ActionResult<PageResult<LeaveTypesVM>>> GetLeaveTypes([FromQuery] QueryParameters queryParameters)
+    public async Task<ActionResult<PageResult<LeaveTypesVM>>> GetPageLeaveTypes([FromQuery] QueryParameters queryParameters)
         {
             var leavetypes = await _leaveTypesRepository.GetAllAsync<LeaveTypesVM>(queryParameters);
             return Ok(leavetypes);

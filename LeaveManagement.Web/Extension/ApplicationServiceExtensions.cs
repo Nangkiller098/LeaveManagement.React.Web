@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.AspNetCore.OData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Persistence;
 
 namespace LeaveManagement.Web.Extension
@@ -103,6 +104,34 @@ namespace LeaveManagement.Web.Extension
                 opt.SubstituteApiVersionInUrl=true;
             }
             );
+            //adding authorization option in swagger
+            Services.AddSwaggerGen(opt=>{
+                opt.SwaggerDoc("v1",new OpenApiInfo {Title ="LeaveManagementWeb",Version="v1"});
+                opt.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme{
+                    Description= @"JWT Authorization header using the Bearer scheme.
+                                    Enter 'Bearer' [space] and the your token in the text input below
+                                    Example :'Bearer 1234aseqwe'",
+                    Name = "Authorization",
+                    In =ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme="Bearer",
+                });
+                // opt.AddSecurityRequirement(new OpenApiSecurityRequirement
+                // {
+                //     new OpenApiSecurityScheme
+                //     {
+                //         Reference = new OpenApiReference
+                //         {
+                //             Type = ReferenceType.SecurityScheme,
+                //             Id = "Bearer"
+                //         },
+                //         Scheme ="0auth2",
+                //         Name="Bearer",
+                //         In= ParameterLocation.Header
+                //     },
+                //     new List<String>()
+                // });
+            });
           
             return Services;
         }

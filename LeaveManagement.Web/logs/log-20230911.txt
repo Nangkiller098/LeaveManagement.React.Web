@@ -1,0 +1,28 @@
+2023-09-11 15:03:46.233 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-11 15:03:46.259 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-11 15:03:46.259 +07:00 [INF] Hosting environment: Development
+2023-09-11 15:03:46.259 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-11 15:04:51.982 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-11 15:04:55.148 +07:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 3168.9421 ms
+2023-09-11 15:05:03.529 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-09-11 15:05:03.531 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-09-11 15:05:03.560 +07:00 [INF] HTTP GET /api/LeaveTypes/GetAll responded 200 in 303.7899 ms
+2023-09-11 15:05:08.324 +07:00 [INF] HTTP GET /api/LeaveTypes/GetAll responded 200 in 28.9830 ms
+2023-09-11 15:05:11.540 +07:00 [INF] HTTP GET /api/LeaveTypes/GetAll responded 200 in 2.3857 ms
+2023-09-11 15:05:21.956 +07:00 [INF] HTTP GET /api/LeaveTypes/GetAll responded 200 in 4.8240 ms
+2023-09-11 15:05:25.948 +07:00 [INF] HTTP GET /api/LeaveTypes/GetAll responded 200 in 0.8413 ms
+2023-09-11 15:05:42.887 +07:00 [INF] Application is shutting down...
+2023-09-11 15:11:20.662 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-11 15:11:20.692 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-11 15:11:20.693 +07:00 [INF] Hosting environment: Development
+2023-09-11 15:11:20.693 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-11 15:11:47.868 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-09-11 15:11:47.921 +07:00 [INF] HTTP GET /api/v2/LeaveTypes responded 400 in 56.0848 ms
+2023-09-11 15:11:57.662 +07:00 [INF] HTTP GET /api/v1/LeaveTypes responded 200 in 1310.5507 ms
+2023-09-11 15:12:01.514 +07:00 [INF] HTTP GET /api/v2/LeaveTypes responded 400 in 3.4254 ms
+2023-09-11 15:26:51.347 +07:00 [INF] Application is shutting down...
+2023-09-11 15:36:30.234 +07:00 [INF] Now listening on: http://localhost:5000
+2023-09-11 15:36:30.254 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-11 15:36:30.255 +07:00 [INF] Hosting environment: Development
+2023-09-11 15:36:30.255 +07:00 [INF] Content root path: D:\Projects\LeaveManagement.React.Web\LeaveManagement.Web
+2023-09-11 15:40:24.342 +07:00 [INF] Application is shutting down...

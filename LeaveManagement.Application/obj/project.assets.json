@@ -2960,7 +2960,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ripdo\\.nuget\\packages\\": {}
+    "C:\\Users\\Hengsomnang\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2968,11 +2968,11 @@
       "projectUniqueName": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Application\\LeaveManagement.Application.csproj",
       "projectName": "LeaveManagement.Application",
       "projectPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Application\\LeaveManagement.Application.csproj",
-      "packagesPath": "C:\\Users\\ripdo\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Hengsomnang\\.nuget\\packages\\",
       "outputPath": "d:\\Projects\\LeaveManagement.React.Web\\LeaveManagement.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ripdo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Hengsomnang\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -3056,7 +3056,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
